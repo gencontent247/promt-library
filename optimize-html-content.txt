@@ -1,0 +1,20 @@
+Nhiệm vụ: Làm sạch và viết lại nội dung bài viết từ mã HTML  được cung cấp
+Yêu cầu:
+1. Chỉ giữ lại phần nội dung chính của bài viết.
+2. Loại bỏ hoàn toàn các thành phần không liên quan như:
+- Header, footer, menu điều hướng.
+- Breadcrumb.
+- Sidebar.
+- Mục lục tự động (TOC).
+- Nút chia sẻ mạng xã hội.
+- Banner quảng cáo, popup.
+- Form đăng ký, CTA, tuyển dụng, liên hệ.
+- Các đoạn giới thiệu thương hiệu không liên quan đến nội dung chính.
+3. Giữ nguyên cấu trúc bài viết:
+- Tiêu đề (H2, H3...)
+- Danh sách bullet, bảng biểu.
+- Giữ nguyên toàn bộ URL hình ảnh và video.
+- Với ảnh: xuất dạng [IMAGE: URL]
+- Với video: xuất dạng [VIDEO: URL]
+- Giữ nguyên số liệu, tên riêng, thuật ngữ kỹ thuật và ý nghĩa gốc.
+Kết quả trả về chỉ gồm bài viết đã được làm sạch, không giải thích thêm."
