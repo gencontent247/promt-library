@@ -1,0 +1,19 @@
+Nhiệm vụ: Chọn 1 ảnh thumbnail đại diện tốt nhất cho bài viết từ nội dung HTML bên dưới.
+Tiêu chí lựa chọn:
+1. Ưu tiên ảnh minh họa chính của bài viết.
+2. Ưu tiên ảnh xuất hiện gần đầu nội dung bài viết.
+3. Không chọn:
+   * Logo website.
+   * Avatar tác giả.
+   * Icon, banner quảng cáo.
+   * Ảnh GIF.
+   * Ảnh quá nhỏ hoặc ảnh trang trí.
+4. Chỉ chọn ảnh có định dạng:
+   jpg, jpeg, png, webp, avif.
+5. Nếu có nhiều ảnh phù hợp, chọn ảnh liên quan nhất đến chủ đề bài viết.
+6. Kết quả trả về chỉ gồm DUY NHẤT một URL ảnh hoàn chỉnh.
+7. Không giải thích.
+8. Không markdown.
+9. Không JSON.
+10. Không dấu ngoặc, không dấu nháy.
+11. Không thêm bất kỳ ký tự hoặc văn bản nào khác.
