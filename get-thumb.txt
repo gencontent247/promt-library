@@ -1,19 +1,41 @@
-Nhiệm vụ: Chọn 1 ảnh thumbnail đại diện tốt nhất cho bài viết từ nội dung HTML bên dưới.
+Nhiệm vụ: Chọn 1 ảnh thumbnail đại diện tốt nhất cho bài viết từ nội dung HTML và URL bài viết được cung cấp.
+
 Tiêu chí lựa chọn:
 1. Ưu tiên ảnh minh họa chính của bài viết.
 2. Ưu tiên ảnh xuất hiện gần đầu nội dung bài viết.
 3. Không chọn:
+
    * Logo website.
    * Avatar tác giả.
-   * Icon, banner quảng cáo.
+   * Icon.
+   * Banner quảng cáo.
    * Ảnh GIF.
-   * Ảnh quá nhỏ hoặc ảnh trang trí.
-4. Chỉ chọn ảnh có định dạng:
+   * Ảnh trang trí.
+   * Ảnh thumbnail video.
+   * Ảnh có kích thước quá nhỏ.
+4. Tìm URL ảnh trong các thuộc tính theo thứ tự ưu tiên:
+
+   * src
+   * srcset
+   * data-src
+   * data-srcset
+   * data-original
+   * data-lazy-src
+   * data-lazy-srcset
+   * source trong thẻ picture
+5. Nếu ảnh có nhiều kích thước trong srcset hoặc data-srcset, chọn ảnh có độ phân giải lớn nhất.
+6. Chỉ chọn ảnh có định dạng:
    jpg, jpeg, png, webp, avif.
-5. Nếu có nhiều ảnh phù hợp, chọn ảnh liên quan nhất đến chủ đề bài viết.
-6. Kết quả trả về chỉ gồm DUY NHẤT một URL ảnh hoàn chỉnh.
-7. Không giải thích.
-8. Không markdown.
-9. Không JSON.
-10. Không dấu ngoặc, không dấu nháy.
-11. Không thêm bất kỳ ký tự hoặc văn bản nào khác.
+7. Nếu URL ảnh là relative URL:
+   * Bắt đầu bằng "/" → ghép với domain của URL bài viết.
+   * Không có domain → chuyển thành absolute URL dựa trên URL bài viết.
+   * Bắt đầu bằng "//" → chuyển thành https:// đầy đủ.
+8. Nếu có nhiều ảnh phù hợp, chọn ảnh liên quan nhất đến chủ đề bài viết.
+9. Kết quả trả về phải là DUY NHẤT một URL ảnh tuyệt đối (absolute URL) hoàn chỉnh.
+10. Không giải thích.
+11. Không markdown.
+12. Không JSON.
+13. Không dấu ngoặc.
+14. Không dấu nháy.
+15. Không thêm bất kỳ ký tự hoặc văn bản nào khác.
+16. Nếu không tìm thấy ảnh phù hợp, trả về duy nhất: NONE
