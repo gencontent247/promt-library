@@ -1,33 +1,116 @@
-Hãy viết lại bài viết sau dưới dạng HTML hoàn chỉnh (chỉ xuất nội dung bên trong thẻ <body>, không xuất <html>, <head>, <body>).
-Yêu cầu:
-1. Viết lại toàn bộ nội dung theo văn phong báo chí/chia sẻ kiến thức chuyên sâu, giữ nguyên ý chính nhưng diễn đạt mới tối thiểu 70%.
-2. Bài viết dài từ 1.000 - 1.500 từ.
-3. Bắt đầu bằng đoạn sapo ngắn 2-3 câu giới thiệu chủ đề.
-4. Sử dụng cấu trúc HTML chuẩn:
-   * <h2> cho các mục chính.
-   * Có từ khóa chính xuất hiện tự nhiên trong một số thẻ <h2>.
-   * Các mục con có thể dùng <h3> khi cần.
-   * Nội dung sử dụng <p>, <ul>, <ol>, <li>.
-5. Mỗi thẻ <h2> cần có 3-4 đoạn văn mô tả, mỗi đoạn khoảng 3-4 câu.
-6. Chỉ tập trung vào chủ đề chính của bài viết, loại bỏ các nội dung quảng cáo, CTA, điều hướng website hoặc thông tin không liên quan.
-7. Giữ lại các số liệu, dữ kiện, phát biểu, nội dung phỏng vấn và các thông tin quan trọng từ bài gốc.
-8. Nếu bài viết có đề cập đến thông tin có thể kiểm chứng từ Wikipedia, hãy bổ sung câu dẫn nguồn ngắn gọn và chèn liên kết phù hợp.
-9. Không tạo các tiêu đề như:
+Hãy viết lại bài viết sau dưới dạng HTML hoàn chỉnh (chỉ xuất nội dung bên trong thẻ body, không xuất html, head hoặc body).
 
-* Giới thiệu
-* Nội dung
-* Kết luận
-* Tổng kết
+Mục tiêu:
 
-11. Không thêm FAQ, phụ lục, bảng giá, CTA hoặc các phần mở rộng ngoài nội dung gốc.
-12. Nếu nội dung nguồn có hình ảnh hoặc video:
+* Tạo bài viết chất lượng cao cho người đọc.
+* Tối ưu đồng thời cho SEO truyền thống và GEO (Generative Engine Optimization).
+* Nội dung cần dễ được các hệ thống AI, AI Overview và công cụ tìm kiếm trích dẫn làm nguồn tham khảo.
 
-* Giữ nguyên URL.
-* Chèn đúng vị trí ngữ cảnh bằng: <img src="URL" alt="Mô tả ảnh">
-  hoặc
+Yêu cầu nội dung:
 
-  <iframe src="URL"></iframe>
+1. Viết lại toàn bộ nội dung theo văn phong báo chí, phân tích hoặc chia sẻ kiến thức chuyên sâu.
+
+* Giữ nguyên ý nghĩa và dữ kiện quan trọng.
+* Diễn đạt mới tối thiểu 70%.
+* Không sao chép nguyên văn các đoạn dài từ nguồn.
+
+2. Độ dài bài viết từ 1.000 đến 1.500 từ.
+
+3. Mở bài bằng một đoạn sapo ngắn từ 2-3 câu, nêu rõ chủ đề và giá trị chính mà người đọc nhận được.
+
+4. Xây dựng cấu trúc nội dung rõ ràng:
+
+* Sử dụng h2 cho các chủ đề chính.
+* Sử dụng h3 khi cần triển khai nội dung chi tiết.
+* Nội dung dùng p, ul, ol, li phù hợp.
+* Không sử dụng các tiêu đề chung chung như:
+
+  * Giới thiệu
+  * Nội dung
+  * Kết luận
+  * Tổng kết
+
+5. Mỗi h2 cần:
+
+* Có phần trả lời hoặc tóm tắt ngắn gọn ngay sau tiêu đề.
+* Sau đó mới triển khai phân tích chi tiết.
+* Mỗi mục nên có 3-4 đoạn văn rõ ràng, dễ đọc.
+
+6. Tối ưu GEO:
+
+* Bổ sung các đoạn định nghĩa ngắn gọn khi xuất hiện khái niệm quan trọng.
+* Ưu tiên các câu trả lời trực tiếp, rõ nghĩa và độc lập ngữ cảnh.
+* Làm nổi bật các số liệu, dữ kiện, nghiên cứu hoặc phát biểu có giá trị tham khảo.
+* Giữ nguyên tên người, tổ chức, địa danh, thương hiệu, sản phẩm hoặc các thực thể quan trọng xuất hiện trong bài.
+* Khi phù hợp, sử dụng danh sách hoặc bảng HTML để trình bày thông tin dễ so sánh và dễ trích xuất.
+Khi phù hợp, ưu tiên trình bày thông tin bằng:
+- Danh sách bullet point (ul, li).
+- Danh sách đánh số (ol, li).
+- Bảng HTML (table, tr, td, th).
+Nên sử dụng bảng biểu cho:
+- So sánh các lựa chọn.
+- Ưu điểm và nhược điểm.
+- Thông số kỹ thuật.
+- Số liệu thống kê.
+- Tiêu chí đánh giá hoặc lựa chọn.
+Nên sử dụng bullet point cho:
+- Danh sách lợi ích.
+- Các bước thực hiện.
+- Các lưu ý quan trọng.
+- Các yếu tố cần cân nhắc.
+Không tạo bảng hoặc danh sách một cách gượng ép. Chỉ sử dụng khi thực sự giúp nội dung dễ hiểu hơn.
+Các bảng và danh sách phải được giới thiệu bằng một đoạn văn ngắn trước khi xuất hiện.
+
+7. Chỉ giữ lại nội dung liên quan trực tiếp đến chủ đề chính.
+   Loại bỏ:
+
+* Quảng cáo.
+* CTA.
+* Liên hệ mua hàng.
+* Điều hướng website.
+* Nội dung lan man hoặc không liên quan.
+
+8. Giữ nguyên:
+
+* Số liệu thống kê.
+* Nội dung phỏng vấn.
+* Trích dẫn chuyên gia.
+* Dữ kiện lịch sử.
+* Thông tin có giá trị kiểm chứng.
+
+9. Nếu bài viết đề cập đến khái niệm, nhân vật, địa danh, sự kiện hoặc tổ chức có trang Wikipedia, có thể bổ sung một câu dẫn nguồn ngắn gọn và liên kết tham khảo phù hợp khi thực sự cần thiết.
+
+10. Nếu nội dung nguồn có hình ảnh hoặc video:
+
+* Giữ nguyên URL gốc.
+* Chèn đúng vị trí ngữ cảnh.
+* Sử dụng:
+
+  <img src="URL" alt="Mô tả phù hợp">
+
+hoặc
+
+<iframe src="URL"></iframe>
+
+11. Không tạo:
+
+* FAQ.
+* Schema.
+* CTA.
+* Phụ lục.
+* Bảng giá.
+* Phần mở rộng không có trong chủ đề chính.
+
+12. Nội dung cần:
+
+* Dễ đọc trên thiết bị di động.
+* Các đoạn văn ngắn gọn.
+* Có tính chuyên môn.
+* Có khả năng xuất hiện trong kết quả AI Overview hoặc được AI sử dụng làm nguồn tham khảo.
 
 13. Xuất kết quả dưới dạng HTML sạch, sẵn sàng đăng lên WordPress.
 
-Chỉ trả về mã HTML, không giải thích, không dùng markdown, không đặt trong khối code.
+Chỉ trả về mã HTML.
+Không giải thích.
+Không dùng markdown.
+Không đặt trong khối code.
