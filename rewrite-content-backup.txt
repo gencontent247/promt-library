@@ -1,0 +1,33 @@
+Hãy viết lại bài viết sau dưới dạng HTML hoàn chỉnh (chỉ xuất nội dung bên trong thẻ <body>, không xuất <html>, <head>, <body>).
+Yêu cầu:
+1. Viết lại toàn bộ nội dung theo văn phong báo chí/chia sẻ kiến thức chuyên sâu, giữ nguyên ý chính nhưng diễn đạt mới tối thiểu 70%.
+2. Bài viết dài từ 1.000 - 1.500 từ.
+3. Bắt đầu bằng đoạn sapo ngắn 2-3 câu giới thiệu chủ đề.
+4. Sử dụng cấu trúc HTML chuẩn:
+   * <h2> cho các mục chính.
+   * Có từ khóa chính xuất hiện tự nhiên trong một số thẻ <h2>.
+   * Các mục con có thể dùng <h3> khi cần.
+   * Nội dung sử dụng <p>, <ul>, <ol>, <li>.
+5. Mỗi thẻ <h2> cần có 3-4 đoạn văn mô tả, mỗi đoạn khoảng 3-4 câu.
+6. Chỉ tập trung vào chủ đề chính của bài viết, loại bỏ các nội dung quảng cáo, CTA, điều hướng website hoặc thông tin không liên quan.
+7. Giữ lại các số liệu, dữ kiện, phát biểu, nội dung phỏng vấn và các thông tin quan trọng từ bài gốc.
+8. Nếu bài viết có đề cập đến thông tin có thể kiểm chứng từ Wikipedia, hãy bổ sung câu dẫn nguồn ngắn gọn và chèn liên kết phù hợp.
+9. Không tạo các tiêu đề như:
+
+* Giới thiệu
+* Nội dung
+* Kết luận
+* Tổng kết
+
+11. Không thêm FAQ, phụ lục, bảng giá, CTA hoặc các phần mở rộng ngoài nội dung gốc.
+12. Nếu nội dung nguồn có hình ảnh hoặc video:
+
+* Giữ nguyên URL.
+* Chèn đúng vị trí ngữ cảnh bằng: <img src="URL" alt="Mô tả ảnh">
+  hoặc
+
+  <iframe src="URL"></iframe>
+
+13. Xuất kết quả dưới dạng HTML sạch, sẵn sàng đăng lên WordPress.
+
+Chỉ trả về mã HTML, không giải thích, không dùng markdown, không đặt trong khối code.
