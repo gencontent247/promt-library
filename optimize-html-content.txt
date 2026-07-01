@@ -1,88 +1,54 @@
 Nhiệm vụ:
-Làm sạch (clean) nội dung bài viết được cung cấp.
+Trích xuất và làm sạch nội dung chính của bài viết từ website nguồn. Đây là tác vụ làm sạch dữ liệu, KHÔNG phải tóm tắt, viết lại hay biên tập.
+Quy tắc:
 
-Mục tiêu:
-Chỉ loại bỏ những phần không thuộc nội dung chính của bài viết. TUYỆT ĐỐI KHÔNG được tóm tắt, rút gọn, diễn giải hoặc lược bỏ nội dung chính.
+1. Giữ nguyên nội dung
+- Giữ nguyên 100% nội dung chính.
+- Không tóm tắt, viết lại, diễn giải hoặc lược bỏ thông tin.
+- Không thay đổi thứ tự các đoạn.
+- Nếu không chắc một đoạn có phải nội dung chính hay không thì phải giữ lại.
 
-Yêu cầu:
+2. Chỉ loại bỏ các thành phần giao diện website
+- Header, Footer, Menu, Breadcrumb.
+- Sidebar, Widget.
+- TOC (Mục lục tự động).
+- Banner, Popup, CTA.
+- Form đăng ký, Form liên hệ, Tuyển dụng.
+- Nút chia sẻ mạng xã hội.
+- Danh sách bài viết liên quan, Tin nổi bật, Tin xem nhiều.
+- Box giới thiệu doanh nghiệp hoặc sản phẩm không thuộc nội dung chính.
+- Bình luận và các thành phần điều hướng khác.
 
-1. Giữ nguyên toàn bộ nội dung bài viết
-- Không được bỏ bất kỳ đoạn văn nào thuộc nội dung chính.
-- Không được viết lại theo cách ngắn hơn.
-- Không được tóm tắt.
-- Không được thay đổi ý nghĩa.
-- Không được cắt bớt nếu bài viết dài.
-- Phải xuất đầy đủ từ đầu đến cuối bài viết.
-
-2. Chỉ loại bỏ các thành phần không liên quan như:
-- Header
-- Footer
-- Menu điều hướng
-- Breadcrumb
-- Sidebar
-- Mục lục tự động (TOC)
-- Nút chia sẻ mạng xã hội
-- Banner quảng cáo
-- Popup
-- Form đăng ký
-- CTA
-- Nội dung tuyển dụng
-- Form liên hệ
-- Box giới thiệu thương hiệu không liên quan
-- Danh sách bài viết liên quan (nếu không phải một phần nội dung chính)
-- Bình luận
-- Widget
-
-3. Giữ nguyên cấu trúc bài viết
-- Tiêu đề H1, H2, H3...
-- Danh sách bullet
-- Danh sách đánh số
-- Blockquote
-- Bảng biểu
-- Công thức
-- Mã code (nếu có)
+3. Giữ nguyên cấu trúc
+Giữ nguyên toàn bộ H1-H6, danh sách, bảng biểu, blockquote, công thức và code (nếu có).
 
 4. Hình ảnh và video
-Giữ nguyên URL của tất cả hình ảnh và video xuất hiện trong phần nội dung chính.
-
-Ảnh:
+- Ảnh xuất theo định dạng:
 [IMAGE: URL]
-
-Video:
+- Video xuất theo định dạng:
 [VIDEO: URL]
 
-Nếu URL là Base64 (data:image/...) thì vẫn giữ nguyên đầy đủ.
+5. Chuẩn hóa URL ảnh/video
+- Tự lấy origin (scheme + host) từ SOURCE_URL.
+- Nếu URL đã là absolute (http:// hoặc https://) thì giữ nguyên.
+- Nếu URL bắt đầu bằng "//" thì thêm giao thức của SOURCE_URL.
+- Nếu URL là relative (ví dụ: /..., ./..., ../..., uploads/..., images/..., assets/..., static/...) thì chuyển thành absolute bằng origin của SOURCE_URL.
+- Nếu là Base64 (data:image/...) thì giữ nguyên.
+- Không thay đổi tên file, thư mục hoặc phần mở rộng.
 
-5. Xử lý liên kết
-- Loại bỏ toàn bộ hyperlink khỏi nội dung bài viết.
-- Chỉ giữ lại các liên kết dẫn tới Wikipedia (bao gồm mọi ngôn ngữ như vi.wikipedia.org, en.wikipedia.org...).
-- Khi loại bỏ liên kết, chỉ xóa URL, vẫn giữ nguyên phần văn bản hiển thị (anchor text).
-- Không tự thêm bất kỳ liên kết nào.
+6. Xử lý liên kết
+- Xóa toàn bộ hyperlink.
+- Chỉ giữ lại liên kết thuộc wikipedia.org.
+- Khi xóa hyperlink chỉ xóa URL, giữ nguyên anchor text.
+- Không thêm liên kết mới.
 
-6. Giữ nguyên dữ liệu
-Giữ nguyên:
-- Số liệu
-- Ngày tháng
-- Tên riêng
-- Thuật ngữ chuyên ngành
-- Bảng dữ liệu
-- Đơn vị đo
+7. Giữ nguyên dữ liệu
+Không thay đổi số liệu, ngày tháng, tên riêng, thuật ngữ, bảng biểu, đơn vị đo và công thức.
 
-7. Không được tự ý loại bỏ đoạn chỉ vì nghĩ rằng "không quan trọng".
-
-8. Nếu không chắc một đoạn có thuộc nội dung chính hay không thì PHẢI GIỮ LẠI.
-
-9. Nếu bài viết vượt quá giới hạn token của mô hình:
-- Không được tự ý cắt bớt.
-- Hãy dừng đúng tại vị trí cuối cùng có thể xuất.
-- Kết thúc bằng:
-
+8. Nếu bài viết vượt giới hạn output
+- Không tự ý cắt nội dung.
+- Dừng tại vị trí cuối cùng có thể xuất và kết thúc bằng:
 [CONTINUE]
 
-để có thể tiếp tục ở lượt sau.
-
 Đầu ra:
-- Chỉ trả về bài viết đã được làm sạch.
-- Không giải thích.
-- Không nhận xét.
-- Không thêm bất kỳ nội dung nào khác.
+Chỉ trả về bài viết đã được làm sạch, không giải thích, không nhận xét, không thêm nội dung ngoài bài viết.
