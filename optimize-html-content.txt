@@ -1,20 +1,88 @@
-Nhiệm vụ: Làm sạch và viết lại nội dung bài viết được cung cấp
+Nhiệm vụ:
+Làm sạch (clean) nội dung bài viết được cung cấp.
+
+Mục tiêu:
+Chỉ loại bỏ những phần không thuộc nội dung chính của bài viết. TUYỆT ĐỐI KHÔNG được tóm tắt, rút gọn, diễn giải hoặc lược bỏ nội dung chính.
+
 Yêu cầu:
-1. Chỉ giữ lại phần nội dung chính của bài viết.
-2. Loại bỏ hoàn toàn các thành phần không liên quan như:
-- Header, footer, menu điều hướng.
-- Breadcrumb.
-- Sidebar.
-- Mục lục tự động (TOC).
-- Nút chia sẻ mạng xã hội.
-- Banner quảng cáo, popup.
-- Form đăng ký, CTA, tuyển dụng, liên hệ.
-- Các đoạn giới thiệu thương hiệu không liên quan đến nội dung chính.
-3. Giữ nguyên cấu trúc bài viết:
-- Tiêu đề (H2, H3...)
-- Danh sách bullet, bảng biểu.
-- Giữ nguyên toàn bộ URL hình ảnh và video.
-- Với ảnh: xuất dạng [IMAGE: URL]
-- Với video: xuất dạng [VIDEO: URL]
-- Giữ nguyên số liệu, tên riêng, thuật ngữ kỹ thuật và ý nghĩa gốc.
-Kết quả trả về chỉ gồm bài viết đã được làm sạch, không giải thích thêm."
+
+1. Giữ nguyên toàn bộ nội dung bài viết
+- Không được bỏ bất kỳ đoạn văn nào thuộc nội dung chính.
+- Không được viết lại theo cách ngắn hơn.
+- Không được tóm tắt.
+- Không được thay đổi ý nghĩa.
+- Không được cắt bớt nếu bài viết dài.
+- Phải xuất đầy đủ từ đầu đến cuối bài viết.
+
+2. Chỉ loại bỏ các thành phần không liên quan như:
+- Header
+- Footer
+- Menu điều hướng
+- Breadcrumb
+- Sidebar
+- Mục lục tự động (TOC)
+- Nút chia sẻ mạng xã hội
+- Banner quảng cáo
+- Popup
+- Form đăng ký
+- CTA
+- Nội dung tuyển dụng
+- Form liên hệ
+- Box giới thiệu thương hiệu không liên quan
+- Danh sách bài viết liên quan (nếu không phải một phần nội dung chính)
+- Bình luận
+- Widget
+
+3. Giữ nguyên cấu trúc bài viết
+- Tiêu đề H1, H2, H3...
+- Danh sách bullet
+- Danh sách đánh số
+- Blockquote
+- Bảng biểu
+- Công thức
+- Mã code (nếu có)
+
+4. Hình ảnh và video
+Giữ nguyên URL của tất cả hình ảnh và video xuất hiện trong phần nội dung chính.
+
+Ảnh:
+[IMAGE: URL]
+
+Video:
+[VIDEO: URL]
+
+Nếu URL là Base64 (data:image/...) thì vẫn giữ nguyên đầy đủ.
+
+5. Xử lý liên kết
+- Loại bỏ toàn bộ hyperlink khỏi nội dung bài viết.
+- Chỉ giữ lại các liên kết dẫn tới Wikipedia (bao gồm mọi ngôn ngữ như vi.wikipedia.org, en.wikipedia.org...).
+- Khi loại bỏ liên kết, chỉ xóa URL, vẫn giữ nguyên phần văn bản hiển thị (anchor text).
+- Không tự thêm bất kỳ liên kết nào.
+
+6. Giữ nguyên dữ liệu
+Giữ nguyên:
+- Số liệu
+- Ngày tháng
+- Tên riêng
+- Thuật ngữ chuyên ngành
+- Bảng dữ liệu
+- Đơn vị đo
+
+7. Không được tự ý loại bỏ đoạn chỉ vì nghĩ rằng "không quan trọng".
+
+8. Nếu không chắc một đoạn có thuộc nội dung chính hay không thì PHẢI GIỮ LẠI.
+
+9. Nếu bài viết vượt quá giới hạn token của mô hình:
+- Không được tự ý cắt bớt.
+- Hãy dừng đúng tại vị trí cuối cùng có thể xuất.
+- Kết thúc bằng:
+
+[CONTINUE]
+
+để có thể tiếp tục ở lượt sau.
+
+Đầu ra:
+- Chỉ trả về bài viết đã được làm sạch.
+- Không giải thích.
+- Không nhận xét.
+- Không thêm bất kỳ nội dung nào khác.
