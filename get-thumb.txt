@@ -1,85 +1,80 @@
-Nhiệm vụ:
-Trích xuất DUY NHẤT 1 URL ảnh thumbnail từ nội dung được cung cấp.
+Nhiệm vụ: Trích xuất URL ảnh thumbnail đầu tiên trong nội dung HTML.
 
-QUY TẮC BẮT BUỘC
+Quy tắc:
 
-1. CHỈ được phép sử dụng URL ảnh xuất hiện trực tiếp trong nội dung đầu vào.
+1. Ưu tiên lấy URL theo thứ tự sau:
+   - data-src
+   - data-lazy-src
+   - data-original
+   - data-srcset (lấy URL đầu tiên)
+   - srcset (lấy URL đầu tiên)
+   - src
 
-2. TUYỆT ĐỐI KHÔNG:
-- đoán URL
-- tự tạo URL
-- sửa URL
-- thay đổi tên file
-- thay đổi thư mục
-- sử dụng kiến thức đã học
-- sử dụng URL không xuất hiện trong HTML
+2. Nếu src có dạng:
+   data:image/...
+   hoặc
+   data:...
+   thì BỎ QUA hoàn toàn và tiếp tục kiểm tra các thuộc tính ưu tiên phía trên.
 
-Nếu URL trả về không tồn tại nguyên văn trong HTML thì kết quả bị coi là sai.
+3. Nếu URL ảnh là đầy đủ (https://... hoặc http://...) thì trả về nguyên vẹn.
 
-3. Tìm URL theo thứ tự ưu tiên:
+4. Nếu URL ảnh là đường dẫn tương đối bắt đầu bằng "/"
+   Ví dụ:
+   /static/uploads/abc.jpg
 
-- img[src]
-- img[srcset]
-- img[data-src]
-- img[data-srcset]
-- img[data-original]
-- img[data-lazy-src]
-- img[data-lazy-srcset]
-- source[srcset]
-- source[data-srcset]
+   thì ghép với domain của URL nguồn.
 
-4. Với srcset hoặc data-srcset:
-- phân tích tất cả URL
-- chọn URL có kích thước hoặc mật độ lớn nhất
-- chỉ lấy chính URL xuất hiện trong srcset
+   Ví dụ:
+   URL nguồn:
+   https://abc.com/bai-viet
 
-5. Chỉ chấp nhận định dạng:
+   Kết quả:
+   https://abc.com/static/uploads/abc.jpg
 
-jpg
-jpeg
-png
-webp
-avif
+5. Nếu URL bắt đầu bằng //
+   Ví dụ:
+   //cdn.abc.com/image.jpg
 
-6. Bỏ qua:
+   thì chuyển thành
+   https://cdn.abc.com/image.jpg
 
-logo
-icon
-avatar
-banner
-quảng cáo
-gif
-thumbnail video
-ảnh rất nhỏ
+6. Nếu trong srcset hoặc data-srcset có nhiều URL thì chỉ lấy URL đầu tiên.
 
-7. Nếu có nhiều ảnh hợp lệ:
-- ưu tiên ảnh xuất hiện đầu tiên trong nội dung bài viết
-- KHÔNG suy luận nội dung ảnh
+7. Chỉ trả về đúng một URL ảnh duy nhất.
 
-8. Nếu URL là relative:
+8. Không tự suy đoán URL. Chỉ được sử dụng URL xuất hiện trong HTML hoặc được ghép từ domain của URL nguồn với đường dẫn tương đối.
 
-- bắt đầu bằng https:// hoặc http:// → giữ nguyên
-- bắt đầu bằng // → thêm https:
-- bắt đầu bằng / → ghép với domain của URL bài viết
-- đường dẫn tương đối → resolve theo URL bài viết
+Ví dụ:
 
-9. Chỉ được phép ghép domain với đường dẫn có trong HTML.
-Không được thay đổi bất kỳ ký tự nào của đường dẫn.
+HTML:
+<img
+src="data:image/svg+xml,%3Csvg..."
+data-src="https://macone.vn/wp-content/uploads/2026/05/apple-silicon-da-tan-pha-intel-x86-the-nao.png">
 
-10. Trả về duy nhất một absolute URL.
+Kết quả:
+https://macone.vn/wp-content/uploads/2026/05/apple-silicon-da-tan-pha-intel-x86-the-nao.png
 
-11. Không giải thích.
+---
 
-12. Không markdown.
+HTML:
+<img
+src="/static/uploads/image.jpg">
 
-13. Không JSON.
+URL nguồn:
+https://example.com/bai-viet
 
-14. Không dấu ngoặc.
+Kết quả:
+https://example.com/static/uploads/image.jpg
 
-15. Không dấu nháy.
+---
 
-16. Không thêm bất kỳ ký tự nào khác.
+HTML:
+<img
+src="data:image/svg+xml,..."
+data-src="/static/uploads/image.jpg">
 
-17. Nếu không tìm thấy URL ảnh hợp lệ trong HTML thì trả về duy nhất:
+URL nguồn:
+https://example.com/bai-viet
 
-NONE
+Kết quả:
+https://example.com/static/uploads/image.jpg
