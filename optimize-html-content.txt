@@ -1,4 +1,4 @@
-Nhiệm vụ: Làm sạch và viết lại nội dung bài viết từ mã HTML  được cung cấp
+Nhiệm vụ: Làm sạch và viết lại nội dung bài viết được cung cấp
 Yêu cầu:
 1. Chỉ giữ lại phần nội dung chính của bài viết.
 2. Loại bỏ hoàn toàn các thành phần không liên quan như:
