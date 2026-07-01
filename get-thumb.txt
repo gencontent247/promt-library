@@ -1,41 +1,85 @@
-Nhiệm vụ: Chọn 1 ảnh thumbnail đại diện tốt nhất cho bài viết từ nội dung HTML và URL bài viết được cung cấp.
+Nhiệm vụ:
+Trích xuất DUY NHẤT 1 URL ảnh thumbnail từ nội dung được cung cấp.
 
-Tiêu chí lựa chọn:
-1. Ưu tiên ảnh minh họa chính của bài viết.
-2. Ưu tiên ảnh xuất hiện gần đầu nội dung bài viết.
-3. Không chọn:
+QUY TẮC BẮT BUỘC
 
-   * Logo website.
-   * Avatar tác giả.
-   * Icon.
-   * Banner quảng cáo.
-   * Ảnh GIF.
-   * Ảnh trang trí.
-   * Ảnh thumbnail video.
-   * Ảnh có kích thước quá nhỏ.
-4. Tìm URL ảnh trong các thuộc tính theo thứ tự ưu tiên:
+1. CHỈ được phép sử dụng URL ảnh xuất hiện trực tiếp trong nội dung đầu vào.
 
-   * src
-   * srcset
-   * data-src
-   * data-srcset
-   * data-original
-   * data-lazy-src
-   * data-lazy-srcset
-   * source trong thẻ picture
-5. Nếu ảnh có nhiều kích thước trong srcset hoặc data-srcset, chọn ảnh có độ phân giải lớn nhất.
-6. Chỉ chọn ảnh có định dạng:
-   jpg, jpeg, png, webp, avif.
-7. Nếu URL ảnh là relative URL:
-   * Bắt đầu bằng "/" → ghép với domain của URL bài viết.
-   * Không có domain → chuyển thành absolute URL dựa trên URL bài viết.
-   * Bắt đầu bằng "//" → chuyển thành https:// đầy đủ.
-8. Nếu có nhiều ảnh phù hợp, chọn ảnh liên quan nhất đến chủ đề bài viết.
-9. Kết quả trả về phải là DUY NHẤT một URL ảnh tuyệt đối (absolute URL) hoàn chỉnh.
-10. Không giải thích.
-11. Không markdown.
-12. Không JSON.
-13. Không dấu ngoặc.
-14. Không dấu nháy.
-15. Không thêm bất kỳ ký tự hoặc văn bản nào khác.
-16. Nếu không tìm thấy ảnh phù hợp, trả về duy nhất: NONE
+2. TUYỆT ĐỐI KHÔNG:
+- đoán URL
+- tự tạo URL
+- sửa URL
+- thay đổi tên file
+- thay đổi thư mục
+- sử dụng kiến thức đã học
+- sử dụng URL không xuất hiện trong HTML
+
+Nếu URL trả về không tồn tại nguyên văn trong HTML thì kết quả bị coi là sai.
+
+3. Tìm URL theo thứ tự ưu tiên:
+
+- img[src]
+- img[srcset]
+- img[data-src]
+- img[data-srcset]
+- img[data-original]
+- img[data-lazy-src]
+- img[data-lazy-srcset]
+- source[srcset]
+- source[data-srcset]
+
+4. Với srcset hoặc data-srcset:
+- phân tích tất cả URL
+- chọn URL có kích thước hoặc mật độ lớn nhất
+- chỉ lấy chính URL xuất hiện trong srcset
+
+5. Chỉ chấp nhận định dạng:
+
+jpg
+jpeg
+png
+webp
+avif
+
+6. Bỏ qua:
+
+logo
+icon
+avatar
+banner
+quảng cáo
+gif
+thumbnail video
+ảnh rất nhỏ
+
+7. Nếu có nhiều ảnh hợp lệ:
+- ưu tiên ảnh xuất hiện đầu tiên trong nội dung bài viết
+- KHÔNG suy luận nội dung ảnh
+
+8. Nếu URL là relative:
+
+- bắt đầu bằng https:// hoặc http:// → giữ nguyên
+- bắt đầu bằng // → thêm https:
+- bắt đầu bằng / → ghép với domain của URL bài viết
+- đường dẫn tương đối → resolve theo URL bài viết
+
+9. Chỉ được phép ghép domain với đường dẫn có trong HTML.
+Không được thay đổi bất kỳ ký tự nào của đường dẫn.
+
+10. Trả về duy nhất một absolute URL.
+
+11. Không giải thích.
+
+12. Không markdown.
+
+13. Không JSON.
+
+14. Không dấu ngoặc.
+
+15. Không dấu nháy.
+
+16. Không thêm bất kỳ ký tự nào khác.
+
+17. Nếu không tìm thấy URL ảnh hợp lệ trong HTML thì trả về duy nhất:
+
+NONE
