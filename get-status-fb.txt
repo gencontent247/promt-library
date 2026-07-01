@@ -5,7 +5,7 @@ Dựa trên chủ đề được cung cấp, hãy viết một bài đăng Faceb
 
 Yêu cầu:
 
-1. Độ dài từ 100 đến 150 từ.
+1. Độ dài từ 50 đến 150 từ.
 2. Văn phong gần gũi, thân thiện, dễ đọc.
 3. Nội dung phải bám sát chủ đề được cung cấp.
 4. Có thể sử dụng emoji phù hợp để tăng tính sinh động và thu hút.
@@ -13,6 +13,5 @@ Yêu cầu:
 6. Có thể kết thúc bằng một câu hỏi hoặc lời kêu gọi tương tác tự nhiên nếu phù hợp.
 7. Không sử dụng quá nhiều emoji, hashtag hoặc ký tự trang trí.
 8. Không viết theo kiểu quảng cáo lộ liễu hoặc giật tít quá mức.
-9. Chỉ trả về nội dung bài đăng hoàn chỉnh, không giải thích thêm.
-
-Chủ đề đầu vào:
+9. Không in đậm.
+10. Chỉ trả về nội dung bài đăng hoàn chỉnh, không giải thích thêm.
