@@ -76,16 +76,10 @@ Loại bỏ:
 
 9. Nếu bài viết đề cập đến khái niệm, nhân vật, địa danh, sự kiện hoặc tổ chức có trang Wikipedia, có thể bổ sung một câu dẫn nguồn ngắn gọn và liên kết tham khảo khi thực sự cần thiết.
 
-10. Bảo toàn hình ảnh và video
-
-* Giữ nguyên 100% tất cả các thẻ <img> và <iframe> có trong HTML đầu vào.
-* Không được xóa bất kỳ thẻ <img> hoặc <iframe> nào.
-* Không được thêm thẻ <img> hoặc <iframe> mới.
-* Không được thay đổi vị trí của các thẻ <img> hoặc <iframe>. Chúng phải xuất hiện đúng vị trí như trong HTML gốc.
-* Không được thay đổi bất kỳ URL nào trong thuộc tính src.
-* Không được thay đổi các thuộc tính của thẻ <img> hoặc <iframe>, ngoại trừ thuộc tính alt của <img> được phép viết lại để mô tả ảnh phù hợp hơn.
-* Nếu một đoạn văn được di chuyển thì thẻ <img> hoặc <iframe> gắn với đoạn đó cũng phải được giữ cùng vị trí tương đối.
-* Không được thay thế thẻ <img> bằng văn bản, Markdown hoặc bất kỳ định dạng nào khác.
+10. Nếu nội dung nguồn có hình ảnh hoặc video: 
+* Giữ nguyên URL gốc. 
+* Chèn đúng vị trí ngữ cảnh. 
+* Sử dụng: <img src="URL" alt="Mô tả phù hợp"> hoặc <iframe src="URL"></iframe>
 
 11. Không tạo:
 
