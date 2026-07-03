@@ -52,7 +52,7 @@ Quy tắc:
 - Nếu URL ảnh là URL tương đối (ví dụ: /uploads/a.jpg, images/a.jpg, ../images/a.jpg...), chỉ được ghép với domain của URL bài viết nguồn để tạo thành URL tuyệt đối. Không được thay đổi đường dẫn (path), tên file hoặc phần mở rộng của URL.
 - Nếu không tìm thấy URL ảnh hợp lệ trong HTML nguồn thì bỏ qua ảnh đó, không được tự suy đoán URL.
 - Chỉ xuất URL ảnh tuyệt đối (http:// hoặc https://).
-- Thẻ <img> phải được giữ đúng vị trí tương ứng trong nội dung.
+- Định dạng xuất ảnh: [IMAGE: URL]
 
 5. Liên kết
 - Xóa bỏ các liên kết hyperlink có trong nội dung bài viết
