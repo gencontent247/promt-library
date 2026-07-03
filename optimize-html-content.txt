@@ -45,7 +45,13 @@ Quy tắc:
 - Code (nếu có).
 
 4. Hình ảnh và video
-- Giữ nguyên tất cả các URL hình ảnh và video có trong nội dung chính
+- Giữ nguyên tất cả URL hình ảnh và video trong nội dung chính.
+- Chỉ sử dụng URL thực sự tồn tại trong HTML nguồn, tuyệt đối không tự tạo, suy đoán, chỉnh sửa hoặc bịa URL.
+- Bỏ qua mọi URL dạng data: (ví dụ: data:image/*, base64, SVG placeholder...).
+- Với ảnh lazy-load, ưu tiên lấy URL theo thứ tự: data-src → data-lazy-src → data-original → src (chỉ khi không phải data:).
+- Nếu URL ảnh là URL tương đối (ví dụ: /uploads/a.jpg, images/a.jpg, ../images/a.jpg...), chỉ được ghép với domain của URL bài viết nguồn để tạo thành URL tuyệt đối. Không được thay đổi đường dẫn (path), tên file hoặc phần mở rộng của URL.
+- Nếu không tìm thấy URL ảnh hợp lệ trong HTML nguồn thì bỏ qua ảnh đó, không được tự suy đoán URL.
+- Chỉ xuất URL ảnh tuyệt đối (http:// hoặc https://).
 - Ảnh xuất theo định dạng:
 [IMAGE: URL]
 - Video xuất theo định dạng:
