@@ -1,4 +1,8 @@
-Hãy viết lại bài viết sau dưới dạng HTML hoàn chỉnh (chỉ xuất nội dung bên trong thẻ body, không xuất html, head hoặc body).
+Hãy viết lại bài viết HTML sau dưới dạng HTML hoàn chỉnh.
+
+Chỉ xuất nội dung bên trong thẻ <body>, không xuất <html>, <head> hoặc <body>.
+
+Đầu vào là mã HTML. Hãy giữ nguyên cấu trúc HTML hợp lệ và chỉ viết lại nội dung văn bản. Các thẻ HTML không phải văn bản, đặc biệt là <img> và <iframe>, được coi là dữ liệu bất biến và không phải là nội dung cần viết lại.
 
 Mục tiêu:
 
@@ -13,6 +17,7 @@ Yêu cầu nội dung:
 * Giữ nguyên ý nghĩa và dữ kiện quan trọng.
 * Diễn đạt mới tối thiểu 70%.
 * Không sao chép nguyên văn các đoạn dài từ nguồn.
+* Chỉ viết lại nội dung văn bản giữa các thẻ HTML. Không viết lại, không thay thế và không loại bỏ các thẻ HTML không phải văn bản.
 
 2. Độ dài bài viết từ 1.200 đến 2.000 từ tùy vào độ dài của nội dung gốc.
 
@@ -24,7 +29,6 @@ Yêu cầu nội dung:
 * Sử dụng h3 khi cần triển khai nội dung chi tiết.
 * Nội dung dùng p, ul, ol, li phù hợp.
 * Không sử dụng các tiêu đề chung chung như:
-
   * Giới thiệu
   * Nội dung
   * Kết luận
@@ -43,26 +47,18 @@ Yêu cầu nội dung:
 * Làm nổi bật các số liệu, dữ kiện, nghiên cứu hoặc phát biểu có giá trị tham khảo.
 * Giữ nguyên tên người, tổ chức, địa danh, thương hiệu, sản phẩm hoặc các thực thể quan trọng xuất hiện trong bài.
 * Khi phù hợp, sử dụng danh sách hoặc bảng HTML để trình bày thông tin dễ so sánh và dễ trích xuất.
-Khi phù hợp, ưu tiên trình bày thông tin bằng:
-- Danh sách bullet point (ul, li).
-- Danh sách đánh số (ol, li).
-- Bảng HTML (table, tr, td, th).
-Nên sử dụng bảng biểu cho:
-- So sánh các lựa chọn.
-- Ưu điểm và nhược điểm.
-- Thông số kỹ thuật.
-- Số liệu thống kê.
-- Tiêu chí đánh giá hoặc lựa chọn.
-Nên sử dụng bullet point cho:
-- Danh sách lợi ích.
-- Các bước thực hiện.
-- Các lưu ý quan trọng.
-- Các yếu tố cần cân nhắc.
-Không tạo bảng hoặc danh sách một cách gượng ép. Chỉ sử dụng khi thực sự giúp nội dung dễ hiểu hơn.
-Các bảng và danh sách phải được giới thiệu bằng một đoạn văn ngắn trước khi xuất hiện.
+
+Ưu tiên trình bày bằng:
+
+- ul, li
+- ol, li
+- table, tr, th, td
+
+Chỉ sử dụng khi thực sự giúp nội dung dễ hiểu hơn.
 
 7. Chỉ giữ lại nội dung liên quan trực tiếp đến chủ đề chính.
-   Loại bỏ:
+
+Loại bỏ:
 
 * Quảng cáo.
 * CTA.
@@ -78,19 +74,18 @@ Các bảng và danh sách phải được giới thiệu bằng một đoạn v
 * Dữ kiện lịch sử.
 * Thông tin có giá trị kiểm chứng.
 
-9. Nếu bài viết đề cập đến khái niệm, nhân vật, địa danh, sự kiện hoặc tổ chức có trang Wikipedia, có thể bổ sung một câu dẫn nguồn ngắn gọn và liên kết tham khảo phù hợp khi thực sự cần thiết.
+9. Nếu bài viết đề cập đến khái niệm, nhân vật, địa danh, sự kiện hoặc tổ chức có trang Wikipedia, có thể bổ sung một câu dẫn nguồn ngắn gọn và liên kết tham khảo khi thực sự cần thiết.
 
-10. Nếu nội dung nguồn có hình ảnh hoặc video:
+10. Bảo toàn hình ảnh và video
 
-* Giữ nguyên URL gốc.
-* Chèn đúng vị trí ngữ cảnh.
-* Sử dụng:
-
-  <img src="URL" alt="Mô tả phù hợp">
-
-hoặc
-
-<iframe src="URL"></iframe>
+* Giữ nguyên 100% tất cả các thẻ <img> và <iframe> có trong HTML đầu vào.
+* Không được xóa bất kỳ thẻ <img> hoặc <iframe> nào.
+* Không được thêm thẻ <img> hoặc <iframe> mới.
+* Không được thay đổi vị trí của các thẻ <img> hoặc <iframe>. Chúng phải xuất hiện đúng vị trí như trong HTML gốc.
+* Không được thay đổi bất kỳ URL nào trong thuộc tính src.
+* Không được thay đổi các thuộc tính của thẻ <img> hoặc <iframe>, ngoại trừ thuộc tính alt của <img> được phép viết lại để mô tả ảnh phù hợp hơn.
+* Nếu một đoạn văn được di chuyển thì thẻ <img> hoặc <iframe> gắn với đoạn đó cũng phải được giữ cùng vị trí tương đối.
+* Không được thay thế thẻ <img> bằng văn bản, Markdown hoặc bất kỳ định dạng nào khác.
 
 11. Không tạo:
 
@@ -111,6 +106,9 @@ hoặc
 13. Xuất kết quả dưới dạng HTML sạch, sẵn sàng đăng lên WordPress.
 
 Chỉ trả về mã HTML.
+
 Không giải thích.
-Không dùng markdown.
+
+Không dùng Markdown.
+
 Không đặt trong khối code.
