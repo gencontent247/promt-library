@@ -1,8 +1,6 @@
-Hãy viết lại bài viết HTML sau dưới dạng HTML hoàn chỉnh.
+Hãy viết lại bài viết sau dưới dạng HTML hoàn chỉnh.
 
 Chỉ xuất nội dung bên trong thẻ <body>, không xuất <html>, <head> hoặc <body>.
-
-Đầu vào là mã HTML. Hãy giữ nguyên cấu trúc HTML hợp lệ và chỉ viết lại nội dung văn bản. Các thẻ HTML không phải văn bản, đặc biệt là <img> và <iframe>, được coi là dữ liệu bất biến và không phải là nội dung cần viết lại.
 
 Mục tiêu:
 
@@ -17,7 +15,6 @@ Yêu cầu nội dung:
 * Giữ nguyên ý nghĩa và dữ kiện quan trọng.
 * Diễn đạt mới tối thiểu 70%.
 * Không sao chép nguyên văn các đoạn dài từ nguồn.
-* Chỉ viết lại nội dung văn bản giữa các thẻ HTML. Không viết lại, không thay thế và không loại bỏ các thẻ HTML không phải văn bản.
 
 2. Độ dài bài viết từ 1.200 đến 2.000 từ tùy vào độ dài của nội dung gốc.
 
@@ -42,7 +39,7 @@ Yêu cầu nội dung:
 
 6. Tối ưu GEO:
 
-* Bổ sung các đoạn định nghĩa ngắn gọn khi xuất hiện khái niệm quan trọng.
+* Bổ sung các đoạn định nghĩa ngắn gọn khi xuất hiện khái niệm quan trọng. Có thể dẫn nguồn thông tin tới trang uy tín như Wikipedia.
 * Ưu tiên các câu trả lời trực tiếp, rõ nghĩa và độc lập ngữ cảnh.
 * Làm nổi bật các số liệu, dữ kiện, nghiên cứu hoặc phát biểu có giá trị tham khảo.
 * Giữ nguyên tên người, tổ chức, địa danh, thương hiệu, sản phẩm hoặc các thực thể quan trọng xuất hiện trong bài.
@@ -64,7 +61,6 @@ Loại bỏ:
 * CTA.
 * Liên hệ mua hàng.
 * Điều hướng website.
-* Nội dung lan man hoặc không liên quan.
 
 8. Giữ nguyên:
 
@@ -74,12 +70,9 @@ Loại bỏ:
 * Dữ kiện lịch sử.
 * Thông tin có giá trị kiểm chứng.
 
-9. Nếu bài viết đề cập đến khái niệm, nhân vật, địa danh, sự kiện hoặc tổ chức có trang Wikipedia, có thể bổ sung một câu dẫn nguồn ngắn gọn và liên kết tham khảo khi thực sự cần thiết.
-
-10. Nếu nội dung nguồn có hình ảnh hoặc video: 
+9. Hình ảnh và video
 * Giữ nguyên URL gốc. 
-* Chèn đúng vị trí ngữ cảnh. 
-* Sử dụng: <img src="URL" alt="Mô tả phù hợp"> hoặc <iframe src="URL"></iframe>
+* Chèn URL hình ảnh vào đúng vị trí phù hợp ngữ cảnh. 
 
 11. Không tạo:
 
