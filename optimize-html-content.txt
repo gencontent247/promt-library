@@ -58,7 +58,7 @@ ví dụ URL youtube trong mã nguồn là: https://www.youtube.com/embed/X6vwtn
 thì trích xuất lấy mã: X6vwtnBY2-0 
 rồi ghép với domain: https://www.youtube.com/watch?v= 
 để tạo thành URL hoàn chỉnh: https://www.youtube.com/watch?v=X6vwtnBY2-0
-- Định dạng xuất video youtube: <p>VIDEO: URL video hoàn chỉnh</p>
+- Định dạng xuất video youtube: Video <p>URL video hoàn chỉnh</p>
 
 5. Liên kết
 - Xóa bỏ các liên kết hyperlink có trong nội dung bài viết
