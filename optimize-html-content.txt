@@ -53,7 +53,12 @@ Quy tắc:
 - Nếu không tìm thấy URL ảnh hợp lệ trong HTML nguồn thì bỏ qua ảnh đó, không được tự suy đoán URL.
 - Chỉ xuất URL ảnh tuyệt đối (http:// hoặc https://).
 - Định dạng xuất ảnh: [IMAGE: URL]
-- Định dạng xuất video youtube: [VIDEO: URL]
+- Trích xuất mã video youtube: 
+ví dụ URL youtube trong mã nguồn là: https://www.youtube.com/embed/X6vwtnBY2-0 
+thì trích xuất lấy mã: X6vwtnBY2-0 
+rồi ghép với domain: https://www.youtube.com/watch?v= 
+để tạo thành URL hoàn chỉnh: https://www.youtube.com/watch?v=X6vwtnBY2-0
+- Định dạng xuất video youtube: [VIDEO: URL youtube hoàn chỉnh]
 
 5. Liên kết
 - Xóa bỏ các liên kết hyperlink có trong nội dung bài viết
