@@ -53,6 +53,7 @@ Quy tắc:
 - Nếu không tìm thấy URL ảnh hợp lệ trong HTML nguồn thì bỏ qua ảnh đó, không được tự suy đoán URL.
 - Chỉ xuất URL ảnh tuyệt đối (http:// hoặc https://).
 - Định dạng xuất ảnh: [IMAGE: URL]
+- Định dạng xuất video youtube: [VIDEO: URL]
 
 5. Liên kết
 - Xóa bỏ các liên kết hyperlink có trong nội dung bài viết
