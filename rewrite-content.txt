@@ -73,6 +73,7 @@ Loại bỏ:
 9. Hình ảnh và video
 * Giữ nguyên URL gốc. 
 * Chèn URL hình ảnh vào đúng vị trí phù hợp ngữ cảnh. 
+* Chèn URL video vào đúng vị trí phù hợp ngữ cảnh.
 
 11. Không tạo:
 
