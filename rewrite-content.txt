@@ -46,11 +46,10 @@ Yêu cầu nội dung:
 * Khi phù hợp, sử dụng danh sách hoặc bảng HTML để trình bày thông tin dễ so sánh và dễ trích xuất.
 
 Ưu tiên trình bày bằng:
-
+- <table style="width: 100%; height: 210px;" border="1" width="100%">
 - ul, li
 - ol, li
 - table, tr, th, td
-- border = 1
 
 Chỉ sử dụng khi thực sự giúp nội dung dễ hiểu hơn.
 
