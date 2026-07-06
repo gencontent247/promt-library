@@ -57,9 +57,9 @@ Chỉ sử dụng khi thực sự giúp nội dung dễ hiểu hơn.
 
 Loại bỏ:
 
-* Quảng cáo.
+* Quảng cáo sản phẩm hay dịch vụ
 * CTA.
-* Liên hệ mua hàng.
+* Liên hệ mua hàng, dịch vụ, khóa học
 * Điều hướng website.
 
 8. Giữ nguyên:
