@@ -71,9 +71,37 @@ Loại bỏ:
 * Thông tin có giá trị kiểm chứng.
 
 9. Hình ảnh và video
-* Giữ nguyên URL hình ảnh và video gốc nếu có. 
-* Chèn URL hình ảnh vào đúng vị trí phù hợp ngữ cảnh. 
-* Chèn URL video nếu có vào đúng vị trí phù hợp ngữ cảnh đúng định dạng html <p>url video</p> không phải gắn vào anchor text.
+Hình ảnh là một phần bắt buộc của bài viết.
+
+- KHÔNG được xóa bất kỳ hình ảnh nào có trong HTML gốc.
+- PHẢI giữ lại toàn bộ thẻ <img> xuất hiện trong bài viết.
+- Giữ nguyên tuyệt đối:
+  - src
+  - srcset
+  - sizes
+  - alt
+  - title
+  - width
+  - height
+  - loading
+  - decoding
+  - class
+  - và các thuộc tính khác nếu có.
+- Không đổi URL hình ảnh.
+- Không tạo URL mới.
+- Không thay thế bằng ảnh khác.
+- Không chuyển ảnh thành văn bản.
+- Không đưa URL ảnh ra ngoài thẻ <img>.
+- Mỗi ảnh phải được đặt gần đúng đoạn nội dung mà nó xuất hiện trong bài gốc.
+- Nếu có chú thích ảnh thì giữ lại và đặt ngay sau ảnh.
+
+Đối với video:
+
+- Giữ nguyên URL video.
+- Không nhúng iframe mới.
+- Xuất đúng định dạng:
+
+<p>https://...</p>
 
 11. Không tạo:
 
