@@ -18,11 +18,11 @@ Yêu cầu nội dung:
 
 2. Độ dài bài viết từ 1.200 đến 2.000 từ tùy vào độ dài của nội dung gốc.
 
-3. Mở bài bằng một đoạn sapo ngắn từ 2-3 câu, nêu rõ chủ đề và giá trị chính mà người đọc nhận được.
+3. Mở bài bằng một đoạn sapo ngắn từ 2-3 câu, nêu rõ chủ đề và giá trị chính mà người đọc nhận được, từ khóa chính phải nằm trong đoạn sapo.
 
 4. Xây dựng cấu trúc nội dung rõ ràng:
 
-* Sử dụng h2 cho các chủ đề chính.
+* Sử dụng h2 cho các chủ đề chính, h2 đầu tiên chứa từ khóa chính.
 * Sử dụng h3 khi cần triển khai nội dung chi tiết.
 * Nội dung dùng p, ul, ol, li phù hợp.
 * Không sử dụng các tiêu đề chung chung như:
@@ -71,7 +71,7 @@ Loại bỏ:
 * Thông tin có giá trị kiểm chứng.
 
 9. Hình ảnh và video
-* Giữ nguyên URL gốc. 
+* Giữ nguyên URL hình ảnh và video gốc nếu có. 
 * Chèn URL hình ảnh vào đúng vị trí phù hợp ngữ cảnh. 
 * Chèn URL video nếu có vào đúng vị trí phù hợp ngữ cảnh đúng định dạng html <p>url video</p> không phải gắn vào anchor text.
 
