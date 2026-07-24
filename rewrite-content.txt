@@ -61,6 +61,7 @@ Loại bỏ:
 * CTA.
 * Liên hệ mua hàng, dịch vụ, khóa học
 * Điều hướng website.
+* Link nội bộ
 
 8. Giữ nguyên:
 
