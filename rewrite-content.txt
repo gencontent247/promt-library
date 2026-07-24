@@ -96,13 +96,13 @@ Hình ảnh là một phần bắt buộc của bài viết.
 - Mỗi ảnh phải được đặt gần đúng đoạn nội dung mà nó xuất hiện trong bài gốc.
 - Nếu có chú thích ảnh thì giữ lại và đặt ngay sau ảnh.
 
-Đối với video:
+Đối với video nếu có:
 
 - Giữ nguyên URL video.
 - Không nhúng iframe mới.
-- Xuất đúng định dạng:
+- Xuất đúng định dạng: <p>https://...</p>
+- Nếu không có URL Video youtube nào thì bỏ qua không cần thêm
 
-<p>https://...</p>
 
 11. Không tạo:
 
