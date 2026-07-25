@@ -1,79 +1,58 @@
 Hãy viết lại bài viết sau dưới dạng HTML hoàn chỉnh.
-
 Chỉ xuất nội dung bên trong thẻ <body>, không xuất <html>, <head> hoặc <body>.
-
 Mục tiêu:
-
-* Tạo bài viết chất lượng cao cho người đọc.
-* Tối ưu đồng thời cho SEO truyền thống và GEO (Generative Engine Optimization).
-* Nội dung cần dễ được các hệ thống AI, AI Overview và công cụ tìm kiếm trích dẫn làm nguồn tham khảo.
+- Tạo bài viết chất lượng cao cho người đọc.
+- Tối ưu đồng thời cho SEO truyền thống và GEO (Generative Engine Optimization).
+- Nội dung cần dễ được các hệ thống AI, AI Overview và công cụ tìm kiếm trích dẫn làm nguồn tham khảo.
 
 Yêu cầu nội dung:
-
 1. Viết lại toàn bộ nội dung theo văn phong báo chí, phân tích hoặc chia sẻ kiến thức chuyên sâu.
-
-* Giữ nguyên ý nghĩa và dữ kiện quan trọng.
-* Diễn đạt mới tối thiểu 70%.
-* Không sao chép nguyên văn các đoạn dài từ nguồn.
+- Giữ nguyên ý nghĩa và dữ kiện quan trọng.
+- Diễn đạt mới tối thiểu 70%.
+- Không sao chép nguyên văn các đoạn dài từ nguồn.
 
 2. Độ dài bài viết từ 1.200 đến 2.000 từ tùy vào độ dài của nội dung gốc.
 
-3. Mở bài bằng một đoạn sapo ngắn từ 2-3 câu, nêu rõ chủ đề và giá trị chính mà người đọc nhận được, từ khóa chính phải nằm trong đoạn sapo.
+3. Mở bài bằng một đoạn sapo ngắn từ 2-3 câu, nêu rõ chủ đề và giá trị chính mà người đọc nhận được, từ khóa chính phải nằm ở đầu đoạn sapo.
 
 4. Xây dựng cấu trúc nội dung rõ ràng:
-
-* Sử dụng h2 cho các chủ đề chính, h2 đầu tiên chứa từ khóa chính.
-* Sử dụng h3 khi cần triển khai nội dung chi tiết.
-* Nội dung dùng p, ul, ol, li phù hợp.
-* Không sử dụng các tiêu đề chung chung như:
-  * Giới thiệu
-  * Nội dung
-  * Kết luận
-  * Tổng kết
+- Sử dụng h2 cho các chủ đề chính, h2 đầu tiên chứa từ khóa chính và được bôi đậm.
+- Sử dụng h3 khi cần triển khai nội dung chi tiết.
+- Không sử dụng các tiêu đề chung chung như:
+  - Giới thiệu
+  - Nội dung
+  - Kết luận
+  - Tổng kết
 
 5. Mỗi h2 cần:
-
-* Có phần trả lời hoặc tóm tắt ngắn gọn ngay sau tiêu đề.
-* Sau đó mới triển khai phân tích chi tiết.
-* Mỗi mục nên có 3-4 đoạn văn rõ ràng, dễ đọc.
+- Có phần trả lời hoặc tóm tắt ngắn gọn ngay sau tiêu đề.
+- Sau đó mới triển khai phân tích chi tiết.
+- Mỗi mục nên có 3-4 đoạn văn rõ ràng, dễ đọc, các đoạn văn thường dài từ 3-5 câu.
 
 6. Tối ưu GEO:
-
-* Bổ sung các đoạn định nghĩa ngắn gọn khi xuất hiện khái niệm quan trọng. Có thể dẫn nguồn thông tin tới trang uy tín như Wikipedia.
-* Ưu tiên các câu trả lời trực tiếp, rõ nghĩa và độc lập ngữ cảnh.
-* Làm nổi bật các số liệu, dữ kiện, nghiên cứu hoặc phát biểu có giá trị tham khảo.
-* Giữ nguyên tên người, tổ chức, địa danh, thương hiệu, sản phẩm hoặc các thực thể quan trọng xuất hiện trong bài.
-* Khi phù hợp, sử dụng danh sách hoặc bảng HTML để trình bày thông tin dễ so sánh và dễ trích xuất.
-
-Ưu tiên trình bày bằng:
-- <table style="width: 100%; height: 210px;" border="1" width="100%">
-- ul, li
-- ol, li
-- table, tr, th, td
-
-Chỉ sử dụng khi thực sự giúp nội dung dễ hiểu hơn.
+- Bổ sung các đoạn định nghĩa ngắn gọn khi xuất hiện khái niệm quan trọng. Có thể dẫn nguồn thông tin tới trang uy tín như Wikipedia.
+- Ưu tiên các câu trả lời trực tiếp, rõ nghĩa và độc lập ngữ cảnh.
+- Làm nổi bật các số liệu, dữ kiện, nghiên cứu hoặc phát biểu có giá trị tham khảo.
+- Giữ nguyên tên người, tổ chức, địa danh, thương hiệu, sản phẩm hoặc các thực thể ( Entity ) quan trọng xuất hiện trong bài.
+- Khi phù hợp, có thể sử dụng danh sách hoặc bảng HTML để trình bày thông tin dễ so sánh và dễ trích xuất.
 
 7. Chỉ giữ lại nội dung liên quan trực tiếp đến chủ đề chính.
-
 Loại bỏ:
+- Quảng cáo sản phẩm hay dịch vụ
+- CTA.
+- Liên hệ mua hàng, dịch vụ, khóa học
+- Điều hướng website.
+- Link nội bộ
 
-* Quảng cáo sản phẩm hay dịch vụ
-* CTA.
-* Liên hệ mua hàng, dịch vụ, khóa học
-* Điều hướng website.
-* Link nội bộ
+8. Nội dung cần được giữ nguyên:
+- Số liệu thống kê.
+- Nội dung phỏng vấn.
+- Trích dẫn chuyên gia.
+- Dữ kiện lịch sử.
+- Thông tin có giá trị kiểm chứng.
 
-8. Giữ nguyên:
-
-* Số liệu thống kê.
-* Nội dung phỏng vấn.
-* Trích dẫn chuyên gia.
-* Dữ kiện lịch sử.
-* Thông tin có giá trị kiểm chứng.
-
-9. Hình ảnh và video
+9. Hình ảnh
 Hình ảnh là một phần bắt buộc của bài viết.
-
 - KHÔNG được xóa bất kỳ hình ảnh nào có trong HTML gốc.
 - PHẢI giữ lại toàn bộ thẻ <img> xuất hiện trong bài viết.
 - Giữ nguyên tuyệt đối:
@@ -96,36 +75,29 @@ Hình ảnh là một phần bắt buộc của bài viết.
 - Mỗi ảnh phải được đặt gần đúng đoạn nội dung mà nó xuất hiện trong bài gốc.
 - Nếu có chú thích ảnh thì giữ lại và đặt ngay sau ảnh.
 
-Đối với video nếu có:
-
-- Giữ nguyên URL video.
+10. Video nếu có:
+- Giữ nguyên URL video nếu có.
 - Không nhúng iframe mới.
 - Xuất đúng định dạng: <p>https://...</p>
 - Nếu không có URL Video youtube nào thì bỏ qua không cần thêm
 
-
 11. Không tạo:
-
-* FAQ.
-* Schema.
-* CTA.
-* Phụ lục.
-* Bảng giá.
-* Phần mở rộng không có trong chủ đề chính.
+- FAQ.
+- Schema.
+- CTA.
+- Phụ lục.
+- Bảng giá.
+- Phần mở rộng không có trong chủ đề chính.
 
 12. Nội dung cần:
-
-* Dễ đọc trên thiết bị di động.
-* Các đoạn văn ngắn gọn.
-* Có tính chuyên môn.
-* Có khả năng xuất hiện trong kết quả AI Overview hoặc được AI sử dụng làm nguồn tham khảo.
+- Dễ đọc trên thiết bị di động.
+- Các đoạn văn ngắn gọn.
+- Có tính chuyên môn.
+- Có khả năng xuất hiện trong kết quả AI Overview hoặc được AI sử dụng làm nguồn tham khảo.
+- Có gắn thêm các liên kết nội bộ với anchor text được định sẵn ở phần dữ liệu nội dung đầu vào.
 
 13. Xuất kết quả dưới dạng HTML sạch, sẵn sàng đăng lên WordPress.
-
-Chỉ trả về mã HTML.
-
-Không giải thích.
-
-Không dùng Markdown.
-
-Không đặt trong khối code.
+- Chỉ trả về mã HTML.
+- Không giải thích.
+- Không dùng Markdown.
+- Không đặt trong khối code.
