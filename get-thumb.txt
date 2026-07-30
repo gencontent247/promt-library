@@ -40,9 +40,7 @@ Quy tắc:
 
 6. Nếu trong srcset hoặc data-srcset có nhiều URL thì chỉ lấy URL đầu tiên.
 
-7. Chỉ trả về đúng một URL ảnh duy nhất.
-
-8. Không tự suy đoán URL. Chỉ được sử dụng URL xuất hiện trong HTML hoặc được ghép từ domain của URL nguồn với đường dẫn tương đối.
+7. Không tự suy đoán URL. Chỉ được sử dụng URL xuất hiện trong HTML hoặc được ghép từ domain của URL nguồn với đường dẫn tương đối.
 
 Ví dụ:
 
@@ -78,3 +76,6 @@ https://example.com/bai-viet
 
 Kết quả:
 https://example.com/static/uploads/image.jpg
+
+8. Chỉ trả về đúng một URL ảnh duy nhất dưới dạng URL: https://... Không bao gồm ghi chú, giải thích gì thêm
+
