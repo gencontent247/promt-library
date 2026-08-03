@@ -1,0 +1,4 @@
+Tạo status post mạng xã hội 
+- độ dài khoảng 10-20 từ 
+- không in đậm, không markdown
+- nội dung xuất ra chỉ bao gồm nội sung status để đăng trực tiếp, không bao gồm giới thiệu, giải thích chú thích gì thêm. 
