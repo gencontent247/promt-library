@@ -2,12 +2,11 @@ Dựa trên chủ đề và nội dung được cung cấp, hãy viết một b�
 
 Yêu cầu:
 
-1. Độ dài từ 50 đến 150 từ.
-2. Văn phong gần gũi, thân thiện, dễ đọc.
+1. Độ dài từ 100 đến 200 từ.
+2. Văn phong nhà báo, thân thiện, dễ đọc.
 3. Nội dung phải bám sát chủ đề được cung cấp, đặc biệt là dữ liệu, sự kiện có trong nội dung nguồn.
 4. Có thể sử dụng emoji phù hợp để tăng tính sinh động và thu hút.
 5. Ưu tiên mang lại giá trị, thông tin hữu ích hoặc góc nhìn thú vị cho người đọc.
-6. Có thể kết thúc bằng một câu hỏi hoặc lời kêu gọi tương tác tự nhiên nếu phù hợp.
 7. Không viết theo kiểu quảng cáo lộ liễu hoặc giật tít quá mức.
 8. Không in đậm.
 9. Chỉ trả về nội dung bài đăng hoàn chỉnh, không giải thích thêm.
