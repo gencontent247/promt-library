@@ -25,16 +25,17 @@ Yêu cầu nội dung:
   - Tổng kết
 
 5. Mỗi h2 cần:
+- In đậm các tiêu đề h2 h3
 - Có phần trả lời hoặc tóm tắt ngắn gọn ngay sau tiêu đề.
 - Sau đó mới triển khai phân tích chi tiết.
 - Mỗi mục nên có 3-4 đoạn văn rõ ràng, dễ đọc, các đoạn văn thường dài từ 3-5 câu.
+- Có thể sử dụng kết hợp giữa các đoạn văn, bullet point, bảng biểu phù hợp ngữ cảnh.
 
 6. Tối ưu GEO:
 - Bổ sung các đoạn định nghĩa ngắn gọn khi xuất hiện khái niệm quan trọng. Có thể dẫn nguồn thông tin tới trang uy tín như Wikipedia.
 - Ưu tiên các câu trả lời trực tiếp, rõ nghĩa và độc lập ngữ cảnh.
 - Làm nổi bật các số liệu, dữ kiện, nghiên cứu hoặc phát biểu có giá trị tham khảo.
 - Giữ nguyên tên người, tổ chức, địa danh, thương hiệu, sản phẩm hoặc các thực thể ( Entity ) quan trọng xuất hiện trong bài.
-- Khi phù hợp, có thể sử dụng danh sách hoặc bảng HTML để trình bày thông tin dễ so sánh và dễ trích xuất.
 
 7. Chỉ giữ lại nội dung liên quan trực tiếp đến chủ đề chính.
 Loại bỏ:
@@ -47,7 +48,7 @@ Loại bỏ:
 8. Nội dung cần được giữ nguyên:
 - Số liệu thống kê.
 - Nội dung phỏng vấn.
-- Trích dẫn chuyên gia.
+- Trích dẫn chuyên gia, đường dẫn tới wikipedia nếu có.
 - Dữ kiện lịch sử.
 - Thông tin có giá trị kiểm chứng.
 
