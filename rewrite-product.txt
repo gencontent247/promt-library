@@ -9,20 +9,6 @@ Mục tiêu
 - Nội dung cần dễ được các hệ thống AI, AI Overview và công cụ tìm kiếm hiểu, trích dẫn và sử dụng làm nguồn tham khảo.
 - Giữ giọng văn tự nhiên, chuyên nghiệp, phù hợp với website bán sản phẩm công nghệ.
 
-Dữ liệu sản phẩm đầu vào có thể bao gồm:
-
-- Tên sản phẩm.
-- Từ khóa chính.
-- Danh mục sản phẩm.
-- URL danh mục sản phẩm.
-- Thông số kỹ thuật.
-- Mô tả sản phẩm.
-- Đặc điểm, tính năng.
-- Hình ảnh.
-- Nội dung sản phẩm gốc.
-
-Các thông tin này phải được ưu tiên sử dụng khi viết lại nội dung.
-
 Yêu cầu nội dung được viết lại:
 1. Viết lại toàn bộ nội dung
 Viết lại toàn bộ nội dung sản phẩm bằng cách diễn đạt mới, tự nhiên và dễ đọc.
