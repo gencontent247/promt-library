@@ -98,7 +98,7 @@ Hình ảnh là một phần bắt buộc của bài viết.
 - Có gắn thêm các liên kết nội bộ với anchor text được định sẵn ở phần dữ liệu nội dung đầu vào.
 
 13. Xuất kết quả dưới dạng HTML sạch, sẵn sàng đăng lên WordPress.
-- Chỉ trả về mã HTML.
+- Chỉ trả về mã HTML sẵn sàng đăng lên website.
 - Không giải thích.
-- Không dùng Markdown.
+- Không Markdown.
 - Không đặt trong khối code.
