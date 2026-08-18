@@ -1,0 +1,217 @@
+Hãy viết lại nội dung sản phẩm sau dưới dạng HTML hoàn chỉnh.
+
+Chỉ xuất nội dung bên trong thẻ <body>, không xuất <html>, <head> hoặc <body>.
+
+Mục tiêu
+- Tạo nội dung sản phẩm chất lượng cao, hữu ích và dễ đọc.
+- Tối ưu đồng thời cho SEO truyền thống và GEO (Generative Engine Optimization).
+- Nội dung cần giúp người dùng hiểu rõ sản phẩm, đặc điểm, công dụng và đối tượng phù hợp.
+- Nội dung cần dễ được các hệ thống AI, AI Overview và công cụ tìm kiếm hiểu, trích dẫn và sử dụng làm nguồn tham khảo.
+- Giữ giọng văn tự nhiên, chuyên nghiệp, phù hợp với website bán sản phẩm công nghệ.
+
+Dữ liệu sản phẩm đầu vào có thể bao gồm:
+
+- Tên sản phẩm.
+- Từ khóa chính.
+- Danh mục sản phẩm.
+- URL danh mục sản phẩm.
+- Thông số kỹ thuật.
+- Mô tả sản phẩm.
+- Đặc điểm, tính năng.
+- Hình ảnh.
+- Nội dung sản phẩm gốc.
+
+Các thông tin này phải được ưu tiên sử dụng khi viết lại nội dung.
+
+Yêu cầu nội dung được viết lại:
+1. Viết lại toàn bộ nội dung
+Viết lại toàn bộ nội dung sản phẩm bằng cách diễn đạt mới, tự nhiên và dễ đọc.
+Giữ nguyên các thông tin, thông số kỹ thuật, tính năng và dữ kiện quan trọng của sản phẩm.
+Không sao chép nguyên văn các đoạn dài từ nội dung nguồn.
+Không làm thay đổi bản chất, công dụng hoặc thông số của sản phẩm.
+Không tự suy đoán hoặc bịa thêm thông số kỹ thuật, tính năng, công nghệ, chứng nhận, thời gian bảo hành hoặc thông tin không xuất hiện trong dữ liệu đầu vào.
+Có thể sắp xếp lại nội dung để tạo cấu trúc tốt hơn nếu không làm thay đổi thông tin sản phẩm.
+2. Độ dài
+Độ dài bài viết khoảng 800-1.500 từ tùy theo lượng thông tin thực tế của sản phẩm.
+Không kéo dài nội dung một cách máy móc chỉ để đạt số lượng từ.
+Nếu nội dung gốc có ít thông tin, ưu tiên tính chính xác và hữu ích thay vì cố tạo nội dung dư thừa.
+3. Mở đầu sản phẩm
+
+Mở đầu bằng một đoạn sapo ngắn khoảng 2-3 câu.
+
+Nêu trực tiếp sản phẩm và giá trị nổi bật của sản phẩm.
+Từ khóa chính nên xuất hiện tự nhiên ở đầu đoạn sapo.
+Không sử dụng cách mở đầu chung chung như "Trong thời đại công nghệ hiện nay..." hoặc các câu dẫn dài không liên quan.
+Không dùng các câu quảng cáo quá mức hoặc khẳng định không có căn cứ.
+4. Cấu trúc nội dung
+
+Sử dụng cấu trúc HTML rõ ràng:
+
+<h2> cho các nội dung chính.
+<h3> khi cần triển khai các nội dung chi tiết.
+Tiêu đề <h2> đầu tiên phải chứa từ khóa chính và được bôi đậm.
+Tất cả tiêu đề <h2> và <h3> phải được bôi đậm bằng thẻ <strong>.
+Không sử dụng các tiêu đề chung chung như:
+Giới thiệu
+Nội dung
+Kết luận
+Tổng kết
+
+Có thể sử dụng các nhóm nội dung phù hợp với sản phẩm như:
+
+Đặc điểm nổi bật
+Thông số kỹ thuật
+Thiết kế và trải nghiệm sử dụng
+Tính năng
+Hiệu năng
+Khả năng tương thích
+Đối tượng phù hợp
+Những điểm cần lưu ý khi lựa chọn
+
+Chỉ sử dụng những mục thực sự phù hợp với thông tin sản phẩm.
+
+5. Cách triển khai từng mục
+
+Sau mỗi tiêu đề <h2>:
+
+Có một đoạn trả lời hoặc tóm tắt ngắn gọn ngay sau tiêu đề.
+Sau đó mới triển khai thông tin chi tiết.
+Ưu tiên các câu trả lời trực tiếp, rõ nghĩa và độc lập ngữ cảnh.
+Các đoạn văn nên ngắn, thường khoảng 2-5 câu.
+Có thể sử dụng bullet point hoặc bảng thông số khi phù hợp, đặc biệt là ở phần Thông tin sản phẩm thì để dạng Bảng.
+
+6. Tối ưu SEO
+Sử dụng từ khóa chính tự nhiên trong:
+Sapo.
+H2 đầu tiên.
+Một số đoạn nội dung quan trọng.
+Sử dụng từ khóa liên quan, từ đồng nghĩa và biến thể ngữ nghĩa một cách tự nhiên.
+Không nhồi nhét từ khóa.
+Không lặp lại một từ khóa quá nhiều lần trong cùng một đoạn.
+Ưu tiên viết cho người dùng trước, SEO sau.
+7. Tối ưu GEO
+Bổ sung các câu trả lời trực tiếp cho những vấn đề người dùng thường quan tâm khi tìm kiếm sản phẩm.
+Khi có khái niệm kỹ thuật quan trọng, có thể giải thích ngắn gọn để người đọc dễ hiểu.
+Làm nổi bật các thông số, dữ kiện và tính năng có giá trị.
+Viết các câu có đầy đủ chủ thể và ngữ cảnh để hệ thống AI có thể hiểu nội dung mà không cần phụ thuộc vào đoạn văn trước đó.
+Giữ nguyên tên thương hiệu, sản phẩm, công nghệ, tiêu chuẩn và các Entity quan trọng xuất hiện trong dữ liệu đầu vào.
+8. Không bịa thông tin
+
+TUYỆT ĐỐI KHÔNG:
+
+Tự tạo thông số kỹ thuật.
+Tự tạo công nghệ sản phẩm.
+Tự tạo chứng nhận.
+Tự tạo chính sách bảo hành.
+Tự tạo xuất xứ.
+Tự tạo mức giá.
+Tự cho sản phẩm là tốt nhất, hàng đầu.
+Tự khẳng định sản phẩm là chính hãng nếu dữ liệu đầu vào không xác nhận.
+Tự khẳng định sản phẩm có hóa đơn nếu dữ liệu đầu vào không xác nhận.
+Tự tạo ưu đãi hoặc chương trình khuyến mãi.
+
+Nếu một thông tin không có trong dữ liệu đầu vào thì không được tự suy đoán.
+
+9. CTA mua hàng và liên kết danh mục
+
+Đây là phần BẮT BUỘC.
+
+Cuối bài viết phải có 01 đoạn CTA mua hàng, dài khoảng 2 câu.
+
+CTA phải được viết tự nhiên, có tính thương mại vừa phải và liên quan trực tiếp đến danh mục sản phẩm.
+
+Dữ liệu danh mục được cung cấp trong phần input:
+
+Tên danh mục: [CATEGORY_NAME]
+URL danh mục: [CATEGORY_URL]
+Từ khóa danh mục chính: [CATEGORY_KEYWORD]
+Từ khóa liên quan có thể sử dụng: [CATEGORY_RELATED_KEYWORDS]
+
+Ví dụ:
+
+Tên danh mục: Bàn phím cơ
+URL danh mục: https://vietgear.vn/danh-muc/ban-phim-co/
+Từ khóa danh mục chính: bàn phím cơ
+Từ khóa liên quan: bàn phím cơ giá rẻ, bàn phím cơ học
+
+CTA cần:
+
+Có thể sử dụng từ khóa chính hoặc biến thể của danh mục.
+Có thể sử dụng 1-2 từ khóa liên quan nếu phù hợp.
+Anchor text phải được gắn trực tiếp vào URL danh mục.
+Chỉ sử dụng 01 liên kết danh mục trong CTA.
+CTA nên có nội dung tương tự như: giới thiệu danh mục, lựa chọn sản phẩm, tham khảo sản phẩm hoặc mua sắm.
+Không sử dụng ngôn ngữ quảng cáo quá mức.
+Không cam kết những điều không có dữ liệu xác thực.
+
+Ví dụ cách triển khai:
+
+Vietgear cung cấp nhiều mẫu <a href="[CATEGORY_URL]">bàn phím cơ</a> với nhiều lựa chọn về thiết kế và tính năng, phù hợp với nhu cầu sử dụng khác nhau. Nếu đang tìm bàn phím cơ giá rẻ, người dùng có thể tham khảo các sản phẩm trong danh mục để lựa chọn mẫu phù hợp.
+
+Lưu ý:
+
+Không bắt buộc phải sử dụng chính xác câu ví dụ trên.
+Phải viết lại CTA tự nhiên theo từng danh mục.
+Không sử dụng cụm từ "bàn phím cơ chính hãng".
+Không sử dụng từ "chính hãng" hoặc các biến thể tương đương để mô tả sản phẩm nếu dữ liệu đầu vào không xác nhận điều đó.
+Không đề cập đến hóa đơn, VAT hoặc chứng từ nếu dữ liệu đầu vào không có thông tin xác nhận.
+Không tạo thêm CTA ở những vị trí khác trong bài.
+CTA phải là đoạn cuối cùng của nội dung sản phẩm.
+10. Hình ảnh
+
+Hình ảnh là thành phần bắt buộc của nội dung.
+
+KHÔNG được xóa bất kỳ hình ảnh nào có trong HTML gốc.
+PHẢI giữ lại toàn bộ thẻ <img> xuất hiện trong nội dung gốc.
+Giữ nguyên tuyệt đối:
+src
+srcset
+sizes
+alt
+title
+width
+height
+loading
+decoding
+class
+và tất cả thuộc tính khác nếu có.
+Không đổi URL hình ảnh.
+Không tạo URL hình ảnh mới.
+Không thay thế hình ảnh bằng hình ảnh khác.
+Không chuyển hình ảnh thành văn bản.
+Không đưa URL hình ảnh ra ngoài thẻ <img>.
+Giữ hình ảnh gần vị trí nội dung tương ứng trong bài viết gốc.
+Nếu hình ảnh có chú thích thì giữ lại chú thích và đặt ngay sau hình ảnh.
+11. Video
+
+Nếu nội dung gốc có URL video YouTube:
+
+Giữ nguyên URL.
+Không tạo iframe mới.
+Xuất URL theo định dạng:
+
+<p>https://...</p>
+
+Nếu không có URL video YouTube trong nội dung gốc thì không cần thêm.
+
+
+12. Yêu cầu về ngôn ngữ
+Viết bằng tiếng Việt tự nhiên.
+Văn phong chuyên nghiệp, rõ ràng, dễ đọc.
+Ưu tiên cách diễn đạt phù hợp với người đang có nhu cầu tìm hiểu và mua sản phẩm.
+Không sử dụng ngôn ngữ quá khoa trương.
+Hạn chế các từ ngữ quảng cáo sáo rỗng như:
+tốt nhất thị trường
+số 1
+đẳng cấp
+tuyệt đối
+hoàn hảo
+chính hãng
+nếu không có căn cứ trong dữ liệu đầu vào.
+Có thể sử dụng cách gọi "anh em", "quý khách", "các bạn", "game thủ", "dân văn phòng"... tùy theo đối tượng phù hợp với sản phẩm.
+
+13. Xuất kết quả dưới dạng HTML sạch, sẵn sàng đăng lên WordPress.
+- Chỉ trả về mã HTML sẵn sàng đăng lên website.
+- Không giải thích.
+- Không Markdown.
+- Không đặt trong khối code.
