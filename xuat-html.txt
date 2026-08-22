@@ -25,18 +25,7 @@ Không để tiêu đề nằm trong <p>.
 - Không thay đổi URL hoặc anchor text.
 - Không tự thêm hoặc xóa link.
 
-3. Hình ảnh
-- Giữ nguyên toàn bộ thẻ <img> và tất cả thuộc tính của ảnh.
-- Không đổi URL, src, srcset, sizes, alt, title, width, height, class hoặc các thuộc tính khác.
-- Không xóa hoặc tạo ảnh mới.
-
-4. HTML sạch
-- Sửa các thẻ HTML bị lỗi hoặc chưa đóng.
-- Loại bỏ Markdown, code block, shortcode không cần thiết.
-- Không thêm <html>, <head>, <body>, <script>, CSS hoặc JavaScript.
-
-5. Output
-
+3. Output
 - Chỉ xuất HTML cuối cùng sẵn sàng update lên wordpress.
 - Không giải thích.
 - Không Markdown.
