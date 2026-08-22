@@ -1,0 +1,53 @@
+Hãy kiểm tra và chuẩn hóa HTML của bài viết dưới đây trước khi cập nhật lên WordPress.
+
+Yêu cầu:
+
+1. Không thay đổi nội dung
+
+* Không viết lại, thêm, bớt hoặc thay đổi ý nghĩa.
+* Không thay đổi số liệu, dữ kiện, tên riêng, URL hoặc anchor text.
+* Chỉ chỉnh sửa HTML và cách trình bày.
+
+2. Chuẩn hóa heading
+
+* Không sử dụng `<h1>` trong nội dung bài viết.
+* Tiêu đề cấp 2 dùng `<h2>`.
+* Tiêu đề cấp 3 dùng `<h3>`.
+* Không để tiêu đề nằm trong `<p>`.
+* H2 và H3 phải có dạng:
+  `<h2><strong>Tiêu đề</strong></h2>`
+  `<h3><strong>Tiêu đề</strong></h3>`
+
+3. Chuẩn hóa nội dung
+
+* Đoạn văn nằm trong `<p>`.
+* Danh sách dùng `<ul>`, `<ol>`, `<li>`.
+* Bảng dùng HTML `<table>` hợp lệ.
+* Nội dung in đậm dùng `<strong>`, không dùng Markdown `**text**`.
+* Sửa các thẻ HTML bị lỗi hoặc chưa đóng đúng.
+
+4. Internal link
+
+* Giữ nguyên toàn bộ internal link.
+* Không đổi URL hoặc anchor text.
+* Không tự thêm hoặc xóa link.
+
+5. Hình ảnh
+
+* Giữ nguyên toàn bộ thẻ `<img>`.
+* Không thay đổi bất kỳ thuộc tính nào của ảnh.
+* Không xóa hoặc tạo ảnh mới.
+
+6. HTML sạch
+
+* Loại bỏ Markdown, shortcode hoặc HTML không cần thiết nếu có.
+* Không sử dụng `<script>`, CSS hoặc JavaScript.
+* Không thêm `<html>`, `<head>` hoặc `<body>`.
+
+7. Output
+
+* Chỉ xuất HTML.
+* Không giải thích.
+* Không Markdown.
+* Không đặt trong code block.
+* HTML phải sẵn sàng để copy trực tiếp vào WordPress.
