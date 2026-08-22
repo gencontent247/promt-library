@@ -11,12 +11,12 @@ Yêu cầu nội dung:
 - Diễn đạt mới tối thiểu 70%.
 - Không sao chép nguyên văn các đoạn dài từ nguồn.
 
-2. Độ dài bài viết từ 1.200 đến 2.000 từ tùy vào độ dài của nội dung gốc.
+2. Độ dài bài viết từ 1.200 đến 3.000 từ tùy vào độ dài của nội dung gốc.
 
 3. Mở bài bằng một đoạn sapo ngắn từ 2-3 câu, nêu rõ chủ đề và giá trị chính mà người đọc nhận được, từ khóa chính phải nằm ở đầu đoạn sapo.
 
 4. Xây dựng cấu trúc nội dung rõ ràng:
-- Nếu trong bài có tiêu đề H1 mà không có đoạn văn nào ở dưới thì xóa tiêu đề H1 đi. còn nếu có đoạn văn ở dưới thì chuyển thành tiêu đề H2 và cho xuống dưới đoạn Sapo.
+- Nếu trong bài có tiêu đề H1 mà không có đoạn văn nào ở dưới thì xóa tiêu đề H1 đi. còn nếu có đoạn văn ở dưới thì chuyển thành tiêu đề H2 và cho đoạn Sapo giới thiệu lên trên.
 - Sử dụng h2 cho các chủ đề chính, h2 đầu tiên chứa từ khóa chính và được bôi đậm.
 - Sử dụng h3 khi cần triển khai nội dung chi tiết.
 - Không sử dụng các tiêu đề chung chung như:
@@ -26,11 +26,37 @@ Yêu cầu nội dung:
   - Tổng kết
 
 5. Mỗi h2 cần:
-- In đậm các tiêu đề h2 h3
+- In đậm các tiêu đề h2 h3 cho vào thẻ <strong>Tiêu đề</strong>
 - Có phần trả lời hoặc tóm tắt ngắn gọn ngay sau tiêu đề.
 - Sau đó mới triển khai phân tích chi tiết.
 - Mỗi mục nên có 3-4 đoạn văn rõ ràng, dễ đọc, các đoạn văn thường dài từ 3-5 câu.
 - Có thể sử dụng kết hợp giữa các đoạn văn, bullet point, bảng biểu phù hợp ngữ cảnh.
+
+Dữ liệu đầu vào có thể chứa danh sách internal link gồm:
+
+- URL.
+- Anchor text.
+- Nội dung/trang đích tương ứng.
+PHẢI sử dụng các internal link được cung cấp trong dữ liệu đầu vào khi chúng phù hợp với nội dung.
+Ví dụ:
+<a href="URL">ANCHOR TEXT</a>
+
+Nguyên tắc:
+- Anchor text phải đúng hoặc gần đúng với anchor text được cung cấp.
+- Link phải đặt vào đoạn nội dung có liên quan về ngữ nghĩa.
+- Không đặt link một cách máy móc.
+- Không đặt nhiều link giống nhau trong cùng một đoạn nếu không cần thiết.
+- Không tạo URL mới.
+- Không tự đoán URL khác với URL được cung cấp.
+- Không đặt link vào heading.
+- Không đặt link ở những vị trí không tự nhiên chỉ để tăng số lượng internal link.
+
+Nếu một internal link trong danh sách không phù hợp với bài viết hiện tại, không cần cố chèn.
+
+Nếu HTML gốc đã có internal link:
+- Có thể giữ lại nếu phù hợp.
+- Có thể di chuyển vị trí nếu cần để cải thiện ngữ cảnh.
+- Không được làm mất những link quan trọng nếu chúng vẫn phù hợp.
 
 6. Tối ưu GEO:
 - Bổ sung các đoạn định nghĩa ngắn gọn khi xuất hiện khái niệm quan trọng. Có thể dẫn nguồn thông tin tới trang uy tín như Wikipedia.
@@ -44,7 +70,6 @@ Loại bỏ:
 - CTA.
 - Liên hệ mua hàng, dịch vụ, khóa học
 - Điều hướng website.
-- Link nội bộ
 
 8. Nội dung cần được giữ nguyên:
 - Số liệu thống kê.
