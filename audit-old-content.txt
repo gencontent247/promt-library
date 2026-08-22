@@ -1,1 +1,323 @@
+Hãy audit, nâng cấp và viết lại bài viết HTML đầu vào thành một bài viết hoàn chỉnh, chất lượng cao và sẵn sàng cập nhật lại WordPress.
 
+Bài viết đầu vào có thể là bài cũ đã xuất bản trên website, nhưng có thể chưa tối ưu SEO, nội dung mỏng, cấu trúc chưa tốt, thiếu chiều sâu hoặc liên kết nội bộ chưa phù hợp.
+
+MỤC TIÊU
+
+* Giữ lại giá trị và ý nghĩa cốt lõi của bài viết cũ.
+* Cải thiện chất lượng nội dung, cấu trúc và khả năng đọc.
+* Bổ sung thông tin vào những phần còn mỏng hoặc chưa giải thích đầy đủ.
+* Tối ưu đồng thời cho SEO truyền thống và GEO (Generative Engine Optimization).
+* Tạo nội dung có khả năng được Google, AI Overview và các hệ thống AI sử dụng làm nguồn tham khảo.
+* Giữ nguyên và tận dụng hệ thống hình ảnh có sẵn trong bài.
+* Tối ưu lại internal link dựa trên danh sách liên kết được cung cấp trong dữ liệu đầu vào.
+* Kết quả cuối cùng phải là HTML sạch, có thể dùng trực tiếp để update bài viết trên WordPress.
+
+1. NGUYÊN TẮC XỬ LÝ NỘI DUNG GỐC
+
+Bài viết HTML gốc là nguồn dữ liệu chính.
+
+PHẢI:
+
+* Giữ nguyên chủ đề chính và search intent của bài viết.
+* Giữ nguyên những ý quan trọng đã có trong bài.
+* Giữ nguyên các dữ kiện, số liệu, tên riêng, thuật ngữ, địa danh, tổ chức, thương hiệu, sản phẩm và entity quan trọng.
+* Không tự ý thay đổi bản chất thông tin chỉ để làm bài viết khác với bản gốc.
+* Không loại bỏ những nội dung có giá trị chỉ vì nội dung đó chưa tối ưu SEO.
+* Có thể sắp xếp lại các đoạn nội dung nếu việc này giúp cấu trúc bài viết logic hơn.
+* Có thể gộp các đoạn trùng lặp hoặc diễn đạt lại những đoạn quá sơ sài, khó hiểu.
+* Có thể bổ sung nội dung để giải thích rõ hơn những vấn đề đã được đề cập trong bài gốc.
+
+KHÔNG ĐƯỢC:
+
+* Không Bịa đặt dữ liệu, số liệu, nghiên cứu, nguồn hoặc phát biểu chuyên gia.
+* Không Tự tạo ra thông tin cụ thể không có cơ sở từ dữ liệu đầu vào.
+* Không Thay đổi ý nghĩa của nội dung gốc.
+* Không Biến bài viết thành một chủ đề khác.
+* Không Chèn nội dung không liên quan chỉ nhằm tăng số lượng từ.
+
+Nếu bài gốc có thông tin không chắc chắn hoặc không đủ dữ liệu để mở rộng, hãy giữ cách diễn đạt thận trọng thay vì tự bịa thêm thông tin.
+
+2. ĐỘ DÀI VÀ MỨC ĐỘ MỞ RỘNG
+
+Độ dài mục tiêu: 1.200 - 3.000 từ.
+
+Không bắt buộc bài viết phải đạt 3.000 từ.
+
+Tự xác định độ dài phù hợp dựa trên:
+
+* Độ dài bài gốc.
+* Mức độ phức tạp của chủ đề.
+* Search intent.
+* Lượng thông tin cần thiết để trả lời đầy đủ chủ đề.
+* Mức độ cần thiết của việc bổ sung nội dung.
+
+Nguyên tắc:
+
+* Bài gốc đã đầy đủ: chủ yếu tối ưu cấu trúc và diễn đạt, không kéo dài bài một cách không cần thiết.
+* Bài gốc hơi mỏng: bổ sung các phần giải thích còn thiếu.
+* Bài gốc rất mỏng: có thể mở rộng đáng kể nhưng vẫn phải bám sát chủ đề và ý định tìm kiếm.
+* Không thêm câu chữ chỉ để đạt số lượng từ.
+
+Ưu tiên chất lượng và độ đầy đủ của thông tin hơn số lượng từ.
+
+3. AUDIT SEARCH INTENT VÀ CẤU TRÚC
+
+Cấu trúc ưu tiên:
+
+* Sapo mở đầu.
+* Các H2 cho chủ đề chính.
+* H3 cho các nội dung cần phân tích sâu hơn.
+* Đoạn văn.
+* Bullet list khi phù hợp.
+* Bảng khi thực sự giúp người đọc dễ hiểu hoặc so sánh.
+
+Không sử dụng các heading chung chung như:
+
+* Giới thiệu
+* Nội dung
+* Kết luận
+* Tổng kết
+
+H2 đầu tiên phải thể hiện trực tiếp chủ đề chính của bài và nên chứa từ khóa chính khi phù hợp tự nhiên.
+
+4. SAPO
+
+Mở đầu bài viết bằng một đoạn sapo ngắn khoảng 2-3 câu.
+
+Sapo phải:
+
+* Nêu trực tiếp chủ đề bài viết.
+* Cho người đọc biết bài viết giải quyết vấn đề gì.
+* Nêu giá trị chính người đọc nhận được.
+* Ưu tiên đặt từ khóa chính ở đầu hoặc gần đầu sapo nếu tự nhiên.
+* Không viết kiểu quảng cáo.
+* Không mở đầu bằng những câu sáo rỗng.
+
+5. CẤU TRÚC H2 VÀ H3
+
+Sử dụng:
+
+<h2><strong>...</strong></h2>
+
+và:
+
+<h3><strong>...</strong></h3>
+
+Mỗi H2 cần có câu trả lời hoặc đoạn tóm tắt trực tiếp ngay sau tiêu đề.
+
+Sau phần trả lời ngắn mới triển khai phân tích chi tiết.
+
+Ưu tiên:
+
+* Câu trả lời trực tiếp.
+* Nội dung rõ nghĩa.
+* Đoạn văn ngắn.
+* Thông tin có thể hiểu độc lập mà không cần đọc toàn bộ bài.
+
+Không bắt buộc mọi H2 đều phải có số lượng đoạn giống nhau.
+
+Chỉ sử dụng số lượng đoạn phù hợp với lượng thông tin thực tế.
+
+6. BỔ SUNG NỘI DUNG THIẾU
+
+Khi audit bài viết, hãy xác định những phần nội dung quan trọng đang bị thiếu.
+
+Có thể bổ sung:
+
+* Giải thích khái niệm.
+* Nguyên nhân.
+* Đặc điểm.
+* Phân loại.
+* Cách nhận biết.
+* Quy trình.
+* Cách thực hiện.
+* Ưu nhược điểm.
+* Những vấn đề thường gặp.
+* Những lưu ý quan trọng.
+* So sánh khi thực sự cần thiết.
+* Các thông tin giúp người đọc hiểu đầy đủ chủ đề.
+
+Chỉ bổ sung những nội dung có liên quan trực tiếp đến search intent.
+
+Không mở rộng bài bằng những chủ đề phụ không cần thiết.
+
+7. TỐI ƯU SEO
+
+Tối ưu nội dung theo hướng tự nhiên, không nhồi nhét từ khóa.
+
+* Sử dụng từ khóa chính một cách tự nhiên.
+* Sử dụng các biến thể, từ đồng nghĩa và thuật ngữ liên quan khi phù hợp.
+* Đưa từ khóa vào heading khi tự nhiên.
+* Tối ưu cấu trúc heading.
+* Tạo các đoạn trả lời trực tiếp cho những câu hỏi quan trọng.
+* Ưu tiên topical coverage thay vì lặp lại từ khóa.
+* Không chèn từ khóa một cách máy móc.
+* Không tạo nội dung chỉ nhằm phục vụ công cụ tìm kiếm.
+
+8. TỐI ƯU GEO
+Nội dung phải dễ được hệ thống AI hiểu, trích xuất và sử dụng làm nguồn tham khảo.
+
+Ưu tiên:
+
+* Câu trả lời trực tiếp.
+* Định nghĩa rõ ràng khi xuất hiện khái niệm quan trọng.
+* Các đoạn nội dung có thể đứng độc lập về mặt ngữ nghĩa.
+* Số liệu và dữ kiện được trình bày rõ ràng.
+* Giải thích quan hệ nguyên nhân - kết quả.
+* Sử dụng entity chính xác và nhất quán.
+* Không dùng cách diễn đạt mơ hồ khi có thể viết cụ thể.
+
+Khi bài viết đề cập đến khái niệm cần định nghĩa, có thể tạo đoạn định nghĩa ngắn ngay sau heading.
+
+Không tự tạo nguồn hoặc trích dẫn, nếu là tên riêng, từ khóa định danh có thể trích dẫn từ wikipedia, ví dụ tên riêng như: Microsoft, Nvida.
+
+Nếu bài gốc đã có nguồn hoặc đường dẫn tới nguồn uy tín, giữ lại nếu nguồn đó vẫn thuộc nội dung cần thiết.
+
+9. DỮ KIỆN VÀ THÔNG TIN QUAN TRỌNG
+
+PHẢI giữ nguyên hoặc bảo toàn:
+
+* Số liệu thống kê.
+* Ngày tháng.
+* Dữ kiện lịch sử.
+* Tên người.
+* Tên chuyên gia.
+* Tên tổ chức.
+* Tên thương hiệu.
+* Tên sản phẩm.
+* Địa danh.
+* Thuật ngữ chuyên ngành.
+* Nội dung phỏng vấn.
+* Trích dẫn có trong bài.
+* Nguồn tham khảo có trong bài.
+
+Không được tự thay đổi số liệu hoặc biến đổi dữ kiện quan trọng.
+
+Nếu cần diễn đạt lại, chỉ thay đổi cách trình bày, không thay đổi ý nghĩa.
+
+10. HÌNH ẢNH - BẮT BUỘC GIỮ NGUYÊN
+
+Hình ảnh trong HTML gốc là dữ liệu bắt buộc phải bảo toàn.
+
+KHÔNG được xóa bất kỳ thẻ <img> nào.
+
+PHẢI giữ nguyên toàn bộ thẻ <img> và các thuộc tính của chúng.
+
+Giữ nguyên tuyệt đối:
+
+* src
+* srcset
+* sizes
+* alt
+* title
+* width
+* height
+* loading
+* decoding
+* class
+* id
+* style
+* data-*
+* và mọi thuộc tính khác nếu có.
+
+Không:
+
+* Đổi URL ảnh.
+* Tạo URL ảnh mới.
+* Thay ảnh.
+* Xóa ảnh.
+* Chuyển ảnh thành văn bản.
+* Đưa URL ảnh ra ngoài thẻ <img>.
+* Tự thêm ảnh mới.
+
+Mỗi hình ảnh phải được đặt gần vị trí và đoạn nội dung tương ứng với bài viết gốc.
+
+Nếu việc sắp xếp lại nội dung khiến vị trí hình ảnh cần thay đổi, chỉ được di chuyển hình ảnh cùng với phần nội dung mà hình ảnh đó minh họa.
+
+Nếu ảnh có caption/chú thích, phải giữ lại.
+
+11. VIDEO
+
+Nếu HTML gốc có URL video YouTube:
+
+* Giữ nguyên URL.
+* Không thay đổi URL.
+* Không tạo video mới.
+* Không nhúng iframe mới.
+
+Xuất URL video theo định dạng:
+
+<p>https://...</p>
+
+Nếu bài gốc không có URL video thì không cần thêm video.
+
+12. INTERNAL LINK
+
+Đây là một phần bắt buộc của quá trình audit.
+
+Dữ liệu đầu vào có thể chứa danh sách internal link gồm:
+
+* URL.
+* Anchor text.
+* Nội dung/trang đích tương ứng.
+
+PHẢI sử dụng các internal link được cung cấp trong dữ liệu đầu vào khi chúng phù hợp với nội dung.
+
+Ví dụ:
+
+<a href="URL">ANCHOR TEXT</a>
+
+Nguyên tắc:
+
+* Anchor text phải đúng hoặc gần đúng với anchor text được cung cấp.
+* Link phải đặt vào đoạn nội dung có liên quan về ngữ nghĩa.
+* Không đặt link một cách máy móc.
+* Không đặt nhiều link trong cùng một đoạn nếu không cần thiết.
+* Không tạo URL mới.
+* Không tự đoán URL khác với URL được cung cấp.
+* Không đặt link vào heading.
+* Không đặt link ở những vị trí không tự nhiên chỉ để tăng số lượng internal link.
+
+Nếu HTML gốc đã có internal link:
+
+* Có thể giữ lại nếu phù hợp.
+* Có thể di chuyển vị trí nếu cần để cải thiện ngữ cảnh.
+* Không được làm mất những link quan trọng nếu chúng vẫn phù hợp.
+* Mỗi Internal link chỉ gắn 1 lần trong bài.
+
+13. NỘI DUNG KHÔNG CẦN GIỮ
+
+Có thể loại bỏ hoặc viết lại:
+
+* Đoạn văn trùng lặp.
+* Nội dung lỗi thời rõ ràng nhưng không có giá trị.
+* Câu chữ dài dòng.
+* Nội dung lan man.
+* Heading không cần thiết.
+
+Tuy nhiên, không được loại bỏ nội dung có giá trị thông tin chỉ vì nó không phục vụ trực tiếp cho SEO.
+
+
+17. ĐẦU RA
+==========
+
+Chỉ xuất phần HTML bên trong <body>.
+
+KHÔNG xuất:
+
+<html>
+<head>
+<body>
+
+Không giải thích quá trình audit.
+
+Không nhận xét về bài viết.
+
+Không liệt kê những gì đã thay đổi.
+
+Không sử dụng Markdown.
+
+Không đặt HTML trong code block.
+
+Kết quả cuối cùng phải là HTML sạch, hoàn chỉnh và sẵn sàng sử dụng để update trực tiếp nội dung bài viết trên WordPress.
