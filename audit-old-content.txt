@@ -64,7 +64,7 @@ Nguyên tắc:
 3. AUDIT SEARCH INTENT VÀ CẤU TRÚC
 
 Cấu trúc ưu tiên:
-
+* nếu có tiêu đề H1 thì xóa tiêu đề H1 đi.
 * Sapo mở đầu.
 * Các H2 cho chủ đề chính.
 * H3 cho các nội dung cần phân tích sâu hơn.
