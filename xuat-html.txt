@@ -4,50 +4,41 @@ Yêu cầu:
 
 1. Không thay đổi nội dung
 
-* Không viết lại, thêm, bớt hoặc thay đổi ý nghĩa.
-* Không thay đổi số liệu, dữ kiện, tên riêng, URL hoặc anchor text.
-* Chỉ chỉnh sửa HTML và cách trình bày.
+TUYỆT ĐỐI KHÔNG ĐƯỢC CÓ <h1> trong HTML đầu ra.
+Nếu HTML đầu vào có <h1>, phải chuyển thẻ <h1> thành <h2> hoặc loại bỏ thẻ heading nếu đó là tiêu đề bài viết đã được WordPress hiển thị bên ngoài nội dung.
+Tất cả heading cấp 2 bắt buộc phải có dạng:
+<h2><strong>Tiêu đề</strong></h2>
+Tất cả heading cấp 3 bắt buộc phải có dạng:
+<h3><strong>Tiêu đề</strong></h3>
+Nếu <h2> hoặc <h3> chưa có <strong>, phải thêm <strong>.
+Không được để <strong> nằm ngoài <h2> hoặc <h3>.
+Không để tiêu đề nằm trong <p>.
 
-2. Chuẩn hóa heading
+2. Nội dung
+- Đoạn văn dùng <p>.
+- Danh sách dùng <ul>, <ol>, <li>.
+- Bảng dùng HTML <table> hợp lệ.
+- Nội dung in đậm dùng <strong>.
+- Không sử dụng Markdown.
+- Internal link
+- Giữ nguyên toàn bộ internal link.
+- Không thay đổi URL hoặc anchor text.
+- Không tự thêm hoặc xóa link.
 
-* Không sử dụng `<h1>` trong nội dung bài viết.
-* Tiêu đề cấp 2 dùng `<h2>`.
-* Tiêu đề cấp 3 dùng `<h3>`.
-* Không để tiêu đề nằm trong `<p>`.
-* H2 và H3 phải có dạng:
-  `<h2><strong>Tiêu đề</strong></h2>`
-  `<h3><strong>Tiêu đề</strong></h3>`
+3. Hình ảnh
+- Giữ nguyên toàn bộ thẻ <img> và tất cả thuộc tính của ảnh.
+- Không đổi URL, src, srcset, sizes, alt, title, width, height, class hoặc các thuộc tính khác.
+- Không xóa hoặc tạo ảnh mới.
 
-3. Chuẩn hóa nội dung
+4. HTML sạch
+- Sửa các thẻ HTML bị lỗi hoặc chưa đóng.
+- Loại bỏ Markdown, code block, shortcode không cần thiết.
+- Không thêm <html>, <head>, <body>, <script>, CSS hoặc JavaScript.
 
-* Đoạn văn nằm trong `<p>`.
-* Danh sách dùng `<ul>`, `<ol>`, `<li>`.
-* Bảng dùng HTML `<table>` hợp lệ.
-* Nội dung in đậm dùng `<strong>`, không dùng Markdown `**text**`.
-* Sửa các thẻ HTML bị lỗi hoặc chưa đóng đúng.
+5. Output
 
-4. Internal link
-
-* Giữ nguyên toàn bộ internal link.
-* Không đổi URL hoặc anchor text.
-* Không tự thêm hoặc xóa link.
-
-5. Hình ảnh
-
-* Giữ nguyên toàn bộ thẻ `<img>`.
-* Không thay đổi bất kỳ thuộc tính nào của ảnh.
-* Không xóa hoặc tạo ảnh mới.
-
-6. HTML sạch
-
-* Loại bỏ Markdown, shortcode hoặc HTML không cần thiết nếu có.
-* Không sử dụng `<script>`, CSS hoặc JavaScript.
-* Không thêm `<html>`, `<head>` hoặc `<body>`.
-
-7. Output
-
-* Chỉ xuất HTML.
-* Không giải thích.
-* Không Markdown.
-* Không đặt trong code block.
-* HTML phải sẵn sàng để copy trực tiếp vào WordPress.
+- Chỉ xuất HTML cuối cùng sẵn sàng update lên wordpress.
+- Không giải thích.
+- Không Markdown.
+- Không đặt HTML trong code block.
+- Không thêm bất kỳ nội dung nào ngoài HTML.
