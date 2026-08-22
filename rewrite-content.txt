@@ -16,6 +16,7 @@ Yêu cầu nội dung:
 3. Mở bài bằng một đoạn sapo ngắn từ 2-3 câu, nêu rõ chủ đề và giá trị chính mà người đọc nhận được, từ khóa chính phải nằm ở đầu đoạn sapo.
 
 4. Xây dựng cấu trúc nội dung rõ ràng:
+- Nếu trong bài có tiêu đề H1 mà không có đoạn văn nào ở dưới thì xóa tiêu đề H1 đi. còn nếu có đoạn văn ở dưới thì chuyển thành tiêu đề H2 và cho xuống dưới đoạn Sapo.
 - Sử dụng h2 cho các chủ đề chính, h2 đầu tiên chứa từ khóa chính và được bôi đậm.
 - Sử dụng h3 khi cần triển khai nội dung chi tiết.
 - Không sử dụng các tiêu đề chung chung như:
