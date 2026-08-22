@@ -64,7 +64,7 @@ Nguyên tắc:
 3. AUDIT SEARCH INTENT VÀ CẤU TRÚC
 
 Cấu trúc ưu tiên:
-* nếu có tiêu đề H1 thì xóa tiêu đề H1 đi.
+* Nếu trong bài có tiêu đề H1 mà không có đoạn văn nào ở dưới thì xóa tiêu đề H1 đi. còn nếu có đoạn văn ở dưới thì chuyển thành tiêu đề H2 và cho xuống dưới đoạn Sapo.
 * Sapo mở đầu.
 * Các H2 cho chủ đề chính.
 * H3 cho các nội dung cần phân tích sâu hơn.
@@ -96,7 +96,7 @@ Sapo phải:
 
 5. CẤU TRÚC H2 VÀ H3
 
-Sử dụng:
+Sử dụng thẻ bắt buộc để in đậm tiêu đề:
 
 <h2><strong>...</strong></h2>
 
