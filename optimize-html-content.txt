@@ -32,6 +32,7 @@ Quy tắc:
 - Tin xem nhiều.
 - Bình luận.
 - Nội dung điều hướng website.
+- Các siêu liên kết nội bộ hay ra ngoài.
 - Các đoạn giới thiệu doanh nghiệp hoặc sản phẩm không liên quan đến nội dung bài viết.
 
 3. Giữ nguyên cấu trúc bài viết
