@@ -47,7 +47,9 @@ Tìm các hình ảnh thực sự hữu ích cho nội dung. Có thể sử dụ
 
 Mỗi hình ảnh ghi thành **một dòng riêng**:
 
-**Alt text:** ... | **Mục tiêu minh họa:** ... | **URL hình ảnh:** ...
+Alt text | Mục tiêu minh họa | URL hình ảnh
+
+URL hình ảnh bắt buộc là 1 URL đầy đủ với đuôi là đuôi file ảnh như jpg, png, webp.
 
 Không tạo hoặc đoán URL hình ảnh.
 
@@ -70,6 +72,7 @@ Format:
 * Nội dung cần triển khai.
 
 Không tạo heading để nhồi từ khóa hoặc kéo dài bài. Mỗi heading phải phục vụ một nhu cầu thông tin cụ thể.
+Đoạn văn đầu tiên sau mỗi heading trả lời trực tiếp cho nội dung mà heading đó đề cập, không lan man, không dùng từ ngữ chung chung nhưng vô nghĩa để mô tả.
 
 ### 7. ĐỊNH HƯỚNG CUỐI
 
