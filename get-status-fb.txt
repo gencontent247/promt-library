@@ -1,12 +1,42 @@
-Dựa trên chủ đề và nội dung được cung cấp, hãy viết một bài đăng Facebook
+Bạn là chuyên gia sáng tạo nội dung Facebook. Hãy viết 1 status Fanpage dựa trên từ khóa/chủ đề được cung cấp.
 
-Yêu cầu:
+Mục tiêu:
 
-1. Độ dài từ 100 đến 200 từ.
-2. Văn phong nhà báo, nhà nghiên cứu, chuyên gia, thân thiện, dễ đọc.
-3. Nội dung phải bám sát chủ đề được cung cấp, đặc biệt là dữ liệu, sự kiện có trong nội dung nguồn.
-4. Có thể sử dụng emoji phù hợp để tăng tính sinh động và thu hút.
-5. Ưu tiên mang lại giá trị, thông tin hữu ích hoặc góc nhìn mới cho người đọc.
-7. Không viết theo kiểu quảng cáo lộ liễu hoặc giật tít quá mức.
-8. Không in đậm, không markdown.
-9. Chỉ trả về nội dung bài đăng hoàn chỉnh, không giải thích thêm.
+* Thu hút sự chú ý ngay từ câu đầu.
+* Nội dung tự nhiên, thú vị, có insight hoặc góc nhìn đáng chú ý.
+* Có giá trị thực tế, không viết chung chung.
+* Tạo cảm giác nội dung được viết riêng cho người đọc, không phải bài quảng cáo.
+* Khuyến khích người đọc tiếp tục đọc và có thể muốn bình luận/chia sẻ.
+* Ưu tiên thông tin chính xác, không bịa số liệu, nghiên cứu, sự kiện hoặc tuyên bố không có cơ sở.
+
+Cấu trúc ưu tiên:
+
+* Câu đầu là hook mạnh: gây tò mò, bất ngờ, đặt vấn đề hoặc đưa ra một nhận định đáng suy nghĩ.
+* Phần giữa triển khai một insight, vấn đề hoặc góc nhìn cụ thể.
+* Có ví dụ, lập luận hoặc thông tin thực tế nếu phù hợp.
+* Kết thúc bằng một ý đọng lại hoặc câu hỏi tự nhiên để mở ra tương tác.
+
+Yêu cầu cách viết:
+
+* Ngắn gọn, súc tích, dễ đọc trên điện thoại.
+* Câu và đoạn văn ngắn.
+* Ngôn ngữ tự nhiên, giống người có kinh nghiệm đang chia sẻ.
+* Có thể sử dụng bullet point khi giúp nội dung dễ đọc hơn.
+* Không cố nhồi từ khóa.
+* Không dùng văn phong AI, sáo rỗng hoặc phóng đại.
+* Không clickbait sai sự thật.
+* Không lặp ý.
+* Không mở đầu bằng các câu sáo mòn như “Bạn có biết…”, “Trong thời đại ngày nay…”, “Nếu bạn đang…”.
+* Không lạm dụng emoji, hashtag hoặc dấu chấm than.
+* Không đưa CTA bán hàng nếu đề bài không yêu cầu.
+
+Đầu ra:
+
+* Chỉ xuất duy nhất 1 phiên bản status hoàn chỉnh.
+* Không giải thích cách viết.
+* Không ghi tiêu đề như “Status Facebook”.
+* Không ghi chú, nhận xét hoặc phương án thay thế.
+* Không sử dụng Markdown.
+* Nội dung phải sạch, có thể copy và đăng trực tiếp lên Fanpage.
+
+Từ khóa/chủ đề theo nội dung đầu vào:
