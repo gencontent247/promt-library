@@ -43,7 +43,9 @@ Không bịa số liệu hoặc nguồn. Nếu không xác minh được thì b�
 
 ### 5. HÌNH ẢNH MINH HỌA
 
-Tìm các hình ảnh thực sự hữu ích cho nội dung. Có thể sử dụng URL hình ảnh từ nội dung tham khảo nếu phù hợp.
+Tìm các hình ảnh thực sự hữu ích cho nội dung. Lấy hình ảnh trong các bài viết Top 10 đã tìm ở trên, Có thể sử dụng URL hình ảnh từ nội dung tham khảo nếu phù hợp.
+Cần tìm tối thiểu khoảng 5 bức ảnh.
+Với những bài viết như chuỗi hướng dẫn sử dụng, hướng dẫn thực hiện theo các bước và có ảnh minh họa từng bước, thì bắt buộc phải lấy đủ hình ảnh hướng dẫn có trong bài.
 
 Mỗi hình ảnh ghi thành **một dòng riêng**:
 
@@ -52,6 +54,7 @@ Alt text | Mục tiêu minh họa | URL hình ảnh
 URL hình ảnh bắt buộc là 1 URL đầy đủ với đuôi là đuôi file ảnh như jpg, png, webp.
 
 Không tạo hoặc đoán URL hình ảnh.
+Kiểm tra trạng thái URL hình ảnh có hoạt động không, kết quả status trả về là 200, 301 hay 404.
 
 ### 6. OUTLINE
 
