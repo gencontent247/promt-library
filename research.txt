@@ -45,6 +45,7 @@ Không bịa số liệu hoặc nguồn. Nếu không xác minh được thì b�
 
 Tìm các hình ảnh thực sự hữu ích cho nội dung. Lấy hình ảnh trong các bài viết Top 10 đã tìm ở trên, Có thể sử dụng URL hình ảnh từ nội dung tham khảo nếu phù hợp.
 Cần tìm tối thiểu khoảng 5 bức ảnh.
+Ngoài sử dụng tiêu đề bài viết để tìm ảnh, cũng có thể lấy các tiêu đề h2 h3 ở phần outline để tìm ảnh minh họa.
 Với những bài viết như chuỗi hướng dẫn sử dụng, hướng dẫn thực hiện theo các bước và có ảnh minh họa từng bước, thì bắt buộc phải lấy đủ hình ảnh hướng dẫn có trong bài.
 
 Mỗi hình ảnh ghi thành **một dòng riêng**:
