@@ -1,4 +1,4 @@
-Hãy viết lại bài viết sau dưới dạng HTML hoàn chỉnh.
+Dựa vào nội dung đầu vào, từ khóa, tiêu đề, được cung cấp, hãy viết 1 bài viết hoàn chỉnh cho chủ đề đó.
 Chỉ xuất nội dung bên trong thẻ <body>, không xuất <html>, <head> hoặc <body>.
 Mục tiêu:
 - Tạo bài viết chất lượng cao cho người đọc.
@@ -11,13 +11,13 @@ Yêu cầu nội dung:
 - Diễn đạt mới tối thiểu 70%.
 - Không sao chép nguyên văn các đoạn dài từ nguồn.
 
-2. Độ dài bài viết từ 1.200 đến 3.000 từ tùy vào độ dài của nội dung gốc.
+2. Độ dài bài viết tùy vào độ dài của nội dung gốc, lưu ý hạn chế viết những câu từ hoa mỹ nhưng không có giá trị chỉ để kéo dài bài viết.
 
 3. Mở bài bằng một đoạn sapo ngắn từ 2-3 câu, nêu rõ chủ đề và giá trị chính mà người đọc nhận được, từ khóa chính phải nằm ở đầu đoạn sapo.
 
 4. Xây dựng cấu trúc nội dung rõ ràng:
 - Nếu trong bài có tiêu đề H1 mà không có đoạn văn nào ở dưới thì xóa tiêu đề H1 đi. còn nếu có đoạn văn ở dưới thì chuyển thành tiêu đề H2 và cho đoạn Sapo giới thiệu lên trên.
-- Sử dụng h2 cho các chủ đề chính, h2 đầu tiên chứa từ khóa chính.
+- Sử dụng các h2 cho các chủ đề chính, h2 đầu tiên chứa từ khóa chính.
 - Sử dụng h3 khi cần triển khai nội dung chi tiết.
 - Không sử dụng các tiêu đề chung chung như:
   - Giới thiệu
