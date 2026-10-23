@@ -1,130 +1,255 @@
-Dựa vào nội dung đầu vào, từ khóa, tiêu đề, được cung cấp, hãy viết 1 bài viết hoàn chỉnh cho chủ đề đó.
-Chỉ xuất nội dung bên trong thẻ <body>, không xuất <html>, <head> hoặc <body>.
+# PROMPT WRITING — SEO + GEO
+
+## 1. Nhiệm vụ
+
+Dựa trên dữ liệu đầu vào gồm **Research, từ khóa chính, tiêu đề bài viết và danh sách Internal Link (nếu có)**, hãy biên tập và viết lại thành một bài viết hoàn chỉnh, chất lượng cao, đáp ứng đúng nhu cầu tìm kiếm của người đọc.
+
 Mục tiêu:
-- Tạo bài viết chất lượng cao cho người đọc.
-- Tối ưu đồng thời cho SEO truyền thống và GEO (Generative Engine Optimization).
-- Nội dung cần dễ được các hệ thống AI, AI Overview và công cụ tìm kiếm trích dẫn làm nguồn tham khảo.
+- Cung cấp thông tin chính xác, chuyên sâu và thực sự hữu ích.
+- Tối ưu SEO truyền thống, đồng thời giúp nội dung rõ ràng, dễ hiểu và dễ được các hệ thống tìm kiếm AI tham khảo.
+- Tạo nội dung có giá trị biên tập, không đơn thuần thay từ hoặc diễn giải lại máy móc.
+- Xuất HTML sạch, sẵn sàng đăng lên WordPress.
 
-Yêu cầu nội dung:
-1. Viết lại toàn bộ nội dung theo văn phong báo chí, phân tích hoặc chia sẻ kiến thức chuyên sâu.
-- Giữ nguyên ý nghĩa và dữ kiện quan trọng.
-- Diễn đạt mới tối thiểu 70%.
-- Không sao chép nguyên văn các đoạn dài từ nguồn.
+## 2. Phân tích dữ liệu trước khi viết
 
-2. Độ dài bài viết tùy vào độ dài của nội dung gốc, lưu ý hạn chế viết những câu từ hoa mỹ nhưng không có giá trị chỉ để kéo dài bài viết.
+Trước khi tạo bài viết, hãy tự thực hiện:
 
-3. Mở bài bằng một đoạn sapo ngắn từ 2-3 câu, nêu rõ chủ đề và giá trị chính mà người đọc nhận được, từ khóa chính phải nằm ở đầu đoạn sapo.
+1. Xác định chủ đề chính, Search Intent và nhu cầu thông tin của người đọc dựa trên keyword và title.
+2. Đọc toàn bộ Research, xác định các luận điểm, dữ kiện, số liệu, thực thể và thông tin quan trọng.
+3. Xác định các nội dung trùng lặp, lan man, không liên quan hoặc thiếu giá trị.
+4. Phân nhóm thông tin theo cấu trúc logic, tránh triển khai trùng nội dung giữa các mục.
+5. Nhận diện tất cả hình ảnh, video, liên kết và chú thích cần bảo toàn.
 
-4. Xây dựng cấu trúc nội dung rõ ràng:
-- Nếu trong bài có tiêu đề H1 mà không có đoạn văn nào ở dưới thì xóa tiêu đề H1 đi. còn nếu có đoạn văn ở dưới thì chuyển thành tiêu đề H2 và cho đoạn Sapo giới thiệu lên trên.
-- Sử dụng các h2 cho các chủ đề chính, h2 đầu tiên chứa từ khóa chính.
-- Sử dụng h3 khi cần triển khai nội dung chi tiết.
-- Không sử dụng các tiêu đề chung chung như:
-  - Giới thiệu
-  - Nội dung
-  - Kết luận
-  - Tổng kết
+Không xuất kết quả phân tích trung gian.
 
-5. Mỗi h2 cần:
-- In đậm các tiêu đề h2 h3 cho vào thẻ <strong>Tiêu đề</strong>
-- Có phần trả lời hoặc tóm tắt ngắn gọn ngay sau tiêu đề.
-- Sau đó mới triển khai phân tích chi tiết.
-- Mỗi mục nên có 3-4 đoạn văn rõ ràng, dễ đọc, các đoạn văn thường dài từ 3-5 câu.
-- Có thể sử dụng kết hợp giữa các đoạn văn, bullet point, bảng biểu phù hợp ngữ cảnh.
+## 3. Nguyên tắc biên tập nội dung
 
-Dữ liệu đầu vào có thể chứa danh sách internal link gồm:
+- Viết bằng tiếng Việt tự nhiên, đúng chính tả và ngữ pháp.
+- Sử dụng văn phong báo chí, phân tích hoặc chia sẻ kiến thức chuyên sâu phù hợp với chủ đề.
+- Viết lại bằng cách diễn đạt và tổ chức thông tin mới, không chỉ thay từ đồng nghĩa.
+- Bảo toàn ý nghĩa, dữ kiện và các thông tin quan trọng từ Research.
+- Ưu tiên câu chủ động, diễn đạt trực tiếp, rõ nghĩa.
+- Không viết câu hoa mỹ, sáo rỗng, lặp ý hoặc kéo dài nội dung để tăng số từ.
+- Không sử dụng giọng văn quảng cáo, tâng bốc hoặc khẳng định quá mức.
+- Không thêm nhận định chủ quan thiếu cơ sở.
+- Không tạo trải nghiệm sử dụng, thử nghiệm, phỏng vấn hoặc phát biểu chuyên gia giả.
+- Không tạo thông tin ngoài phạm vi chủ đề chính chỉ để làm bài viết dài hơn.
 
-- URL.
-- Anchor text.
-- Nội dung/trang đích tương ứng.
-PHẢI sử dụng các internal link được cung cấp trong dữ liệu đầu vào khi chúng phù hợp với nội dung.
-Ví dụ:
-<a href="URL">ANCHOR TEXT</a>
+**Độ dài:** Phụ thuộc vào độ sâu của Research và lượng thông tin thực tế. Viết đủ để giải quyết Search Intent, không áp đặt số từ hoặc số đoạn cố định.
+
+## 4. Cấu trúc bài viết
+
+### 4.1. Sapo
+
+- Bắt đầu bằng một đoạn `<p>` gồm khoảng 2–3 câu.
+- Từ khóa chính phải nằm ngay đầu đoạn sapo, giữ nguyên cách viết và dấu tiếng Việt.
+- Nêu trực tiếp chủ đề, vấn đề chính và giá trị người đọc nhận được.
+- Không mở đầu bằng những câu dẫn chung chung, dài dòng.
+- Không lặp lại nguyên văn tiêu đề bài viết dưới dạng một đoạn giới thiệu.
+
+### 4.2. Heading
+
+- Không xuất thẻ `<h1>` vì tiêu đề bài viết đã được quản lý riêng trong WordPress.
+- Nếu Research có H1 kèm nội dung quan trọng, chuyển nội dung đó vào sapo hoặc mục H2 phù hợp.
+- Sử dụng H2 cho các chủ đề chính, H3 cho các nội dung chi tiết thuộc H2.
+- H2 đầu tiên phải chứa nguyên văn từ khóa chính và phù hợp với nội dung triển khai.
+- Các heading cần mô tả cụ thể nội dung bên dưới, không đặt tên chung chung như "Giới thiệu", "Nội dung", "Kết luận", "Tổng kết".
+- Không tạo heading chỉ để chia nhỏ bài viết một cách máy móc.
+- Không nhồi nhét từ khóa vào heading.
+
+Định dạng heading:
+
+`<h2><strong>Tiêu đề H2</strong></h2>`
+
+`<h3><strong>Tiêu đề H3</strong></h3>`
+
+### 4.3. Triển khai nội dung
+
+- Mỗi H2 tập trung giải quyết một vấn đề hoặc nhóm thông tin cụ thể.
+- Khi heading đặt câu hỏi hoặc nêu vấn đề cần giải đáp, ưu tiên câu trả lời trực tiếp ở đoạn đầu tiên.
+- Sau câu trả lời chính mới giải thích nguyên nhân, đặc điểm, cách thức, ví dụ hoặc dữ liệu hỗ trợ.
+- Mỗi đoạn tập trung vào một ý chính.
+- Ưu tiên đoạn văn ngắn, dễ đọc trên điện thoại, thông thường khoảng 2–4 câu.
+- Số lượng đoạn tùy theo lượng thông tin thực tế, không ép mỗi mục phải có cùng độ dài.
+- Sử dụng `<ul>`, `<ol>`, `<li>` khi cần liệt kê.
+- Sử dụng bảng HTML khi có dữ liệu so sánh hoặc thông tin dạng bảng thực sự phù hợp.
+- Không biến toàn bộ bài viết thành danh sách bullet point.
+- Không diễn giải lại cùng một thông tin ở nhiều heading.
+
+## 5. Tối ưu SEO
+
+- Giữ nguyên từ khóa chính được cung cấp, không tự ý sửa thành từ khóa khác.
+- Từ khóa chính phải xuất hiện tự nhiên trong sapo và H2 đầu tiên.
+- Có thể sử dụng các biến thể ngữ nghĩa, từ khóa liên quan và thực thể quan trọng trong những phần nội dung phù hợp.
+- Không áp đặt mật độ từ khóa.
+- Không chèn từ khóa vào câu văn gây mất tự nhiên.
+- Nội dung phải đáp ứng đúng Search Intent thể hiện qua title và keyword.
+- Các chủ đề phụ phải phục vụ chủ đề chính, không mở rộng sang Search Intent không liên quan.
+- Hạn chế lặp ý giữa sapo, heading và các đoạn nội dung.
+
+## 6. Tối ưu GEO và giá trị thông tin
+
+- Trình bày thông tin theo cách người đọc và hệ thống AI có thể hiểu chính xác khi tham khảo từng đoạn riêng biệt.
+- Khi xuất hiện khái niệm chuyên môn quan trọng, giải thích ngắn gọn nếu người đọc cần biết để hiểu nội dung.
+- Ưu tiên trình bày trực tiếp các định nghĩa, nguyên lý, nguyên nhân, đặc điểm, cách thực hiện hoặc kết quả.
+- Đảm bảo các phát biểu có đủ chủ thể và ngữ cảnh, tránh sử dụng quá nhiều từ như "điều này", "nó", "như trên" gây mơ hồ.
+- Giữ các dữ liệu định lượng, điều kiện áp dụng, phạm vi nghiên cứu và mốc thời gian đi kèm khi có trong Research.
+- Phân biệt rõ dữ kiện đã được cung cấp, ý kiến chuyên gia, nhận định và suy luận.
+- Khi phù hợp, bổ sung phân tích hoặc liên hệ logic từ những dữ kiện có sẵn, không tạo thêm sự thật mới.
+- Không tạo các định nghĩa, bảng tóm tắt hoặc câu hỏi chỉ nhằm phục vụ AI.
+
+Ưu tiên độ chính xác, giá trị thông tin và tính độc đáo của bài viết thay vì những kỹ thuật GEO máy móc.
+
+## 7. Kiểm soát dữ kiện và nguồn tham khảo
+
+**Bắt buộc bảo toàn nếu có trong Research:**
+- Số liệu thống kê, đơn vị đo và mốc thời gian.
+- Kết quả nghiên cứu, phạm vi và điều kiện áp dụng.
+- Phỏng vấn, phát biểu và trích dẫn chuyên gia.
+- Dữ kiện lịch sử và thông tin có thể kiểm chứng.
+- Tên người, tổ chức, địa danh, thương hiệu, sản phẩm và các Entity quan trọng.
+- Nguồn dẫn chứng hoặc liên kết tham khảo có giá trị.
 
 Nguyên tắc:
-- Anchor text phải đúng hoặc gần đúng với anchor text được cung cấp.
-- Link phải đặt vào đoạn nội dung có liên quan về ngữ nghĩa.
-- Không đặt link một cách máy móc.
-- Không đặt nhiều link giống nhau trong cùng một đoạn nếu không cần thiết.
-- Không tạo URL mới.
-- Không tự đoán URL khác với URL được cung cấp.
-- Không đặt link vào heading.
-- Không đặt link ở những vị trí không tự nhiên chỉ để tăng số lượng internal link.
+- Không tự tạo số liệu, nguồn nghiên cứu, lời trích dẫn hoặc tên chuyên gia.
+- Không tự tuyên bố đã kiểm chứng thông tin nếu chưa có bước xác minh.
+- Không biến dữ kiện có điều kiện thành kết luận tuyệt đối.
+- Không đổi ý nghĩa số liệu hoặc thông tin khi diễn đạt lại.
+- Nếu thông tin mâu thuẫn, thiếu ngữ cảnh hoặc không đủ cơ sở, tránh đưa ra kết luận chắc chắn.
+- Có thể giữ liên kết nguồn uy tín như Wikipedia, website tổ chức, tài liệu khoa học nếu đã được cung cấp và phù hợp.
+- Không tạo URL tham khảo giả hoặc URL chưa xác minh.
 
-Nếu một internal link trong danh sách không phù hợp với bài viết hiện tại, không cần cố chèn.
+## 8. Internal Link
 
-Nếu HTML gốc đã có internal link:
-- Có thể giữ lại nếu phù hợp.
-- Có thể di chuyển vị trí nếu cần để cải thiện ngữ cảnh.
-- Không được làm mất những link quan trọng nếu chúng vẫn phù hợp.
+Dữ liệu đầu vào có thể chứa danh sách Internal Link gồm URL, Anchor Text và nội dung trang đích.
 
-6. Tối ưu GEO:
-- Bổ sung các đoạn định nghĩa ngắn gọn khi xuất hiện khái niệm quan trọng. Có thể dẫn nguồn thông tin tới trang uy tín như Wikipedia.
-- Ưu tiên các câu trả lời trực tiếp, rõ nghĩa và độc lập ngữ cảnh.
-- Làm nổi bật các số liệu, dữ kiện, nghiên cứu hoặc phát biểu có giá trị tham khảo.
-- Giữ nguyên tên người, tổ chức, địa danh, thương hiệu, sản phẩm hoặc các thực thể ( Entity ) quan trọng xuất hiện trong bài.
+Yêu cầu:
+- Sử dụng các Internal Link được cung cấp khi có liên quan thực sự tới nội dung.
+- Anchor Text phải đúng hoặc gần đúng với anchor được cung cấp.
+- Đặt link trong đoạn văn phù hợp về mặt ngữ nghĩa.
+- Giữ nguyên URL chính xác, không sửa và không tự tạo URL mới.
+- Không chèn link vào heading.
+- Không chèn link máy móc hoặc lặp cùng một URL nhiều lần nếu không cần thiết.
+- Nếu một link không phù hợp, có thể bỏ qua.
 
-7. Chỉ giữ lại nội dung liên quan trực tiếp đến chủ đề chính.
-Loại bỏ:
-- Quảng cáo sản phẩm hay dịch vụ
-- CTA.
-- Liên hệ mua hàng, dịch vụ, khóa học
-- Điều hướng website.
+Định dạng:
 
-8. Nội dung cần được giữ nguyên:
-- Số liệu thống kê.
-- Nội dung phỏng vấn.
-- Trích dẫn chuyên gia, đường dẫn tới wikipedia nếu có.
-- Dữ kiện lịch sử.
-- Thông tin có giá trị kiểm chứng.
+`<a href="URL">Anchor Text</a>`
 
-9. Hình ảnh
-Hình ảnh là một phần bắt buộc của bài viết.
-- KHÔNG được xóa bất kỳ hình ảnh nào có trong HTML gốc.
-- PHẢI giữ lại toàn bộ thẻ <img> xuất hiện trong bài viết.
-- Giữ nguyên tuyệt đối:
-  - src
-  - srcset
-  - sizes
-  - alt
-  - title
-  - width
-  - height
-  - loading
-  - decoding
-  - class
-  - và các thuộc tính khác nếu có.
-- Không đổi URL hình ảnh.
-- Không tạo URL mới.
-- Không thay thế bằng ảnh khác.
-- Không chuyển ảnh thành văn bản.
-- Không đưa URL ảnh ra ngoài thẻ <img>.
-- Mỗi ảnh phải được đặt gần đúng đoạn nội dung mà nó xuất hiện trong bài gốc.
-- Nếu có chú thích ảnh thì giữ lại và đặt ngay sau ảnh.
+Nếu Research đã có Internal Link:
+- Giữ lại các liên kết phù hợp và quan trọng.
+- Có thể điều chỉnh vị trí để cải thiện ngữ cảnh.
+- Tránh chèn trùng một liên kết từ hai nguồn đầu vào.
+- Không làm mất các liên kết có giá trị chỉ vì thay đổi cấu trúc bài viết.
 
-10. Video nếu có:
-- Giữ nguyên URL video nếu có.
-- Không nhúng iframe mới.
-- Xuất đúng định dạng: <p>https://...</p>
-- Nếu không có URL Video youtube nào thì bỏ qua không cần thêm
+## 9. Xử lý và chèn hình ảnh
 
-11. Không tạo:
+Hình ảnh được sử dụng từ dữ liệu Research hoặc HTML gốc. Không tự tạo URL hình ảnh mới.
+
+### 9.1. Kiểm tra URL hình ảnh
+
+Trước khi chèn hình ảnh vào bài viết, bắt buộc kiểm tra trạng thái truy cập thực tế của URL hình ảnh.
+
+- URL trả về HTTP 200–299 hợp lệ và có dữ liệu hình ảnh: cho phép sử dụng.
+- URL trả về HTTP 301, 302, 303, 307, 308 hoặc trạng thái redirect khác: bỏ qua hình ảnh, không tự động chuyển hướng sang URL mới.
+- URL trả về HTTP 400–599: bỏ qua hình ảnh.
+- URL bị timeout, lỗi DNS, lỗi SSL, không kết nối được hoặc không trả về dữ liệu hình ảnh hợp lệ: bỏ qua hình ảnh.
+- Không tự sửa, đoán hoặc tạo URL thay thế cho ảnh bị lỗi.
+- Nếu ảnh bị loại bỏ, đồng thời loại bỏ chú thích hoặc thẻ bao ngoài không còn nội dung.
+- Nếu có `srcset`, chỉ giữ các URL ảnh đã vượt qua bước kiểm tra.
+- Chỉ sử dụng hình ảnh có kết quả kiểm tra truy cập hợp lệ.
+
+### 9.2. Kích thước hình ảnh
+
+Tất cả hình ảnh được chèn vào bài viết phải có chiều rộng mặc định 800px, khai báo trực tiếp trong HTML.
+
+Định dạng chuẩn:
+
+`<img src="URL_HINH_ANH" width="800" style="width:800px;max-width:100%;height:auto;" alt="Mo ta hinh anh">`
+
+Nguyên tắc:
+- Chiều rộng mặc định là 800px.
+- Không làm méo hoặc biến dạng hình ảnh, giữ đúng tỷ lệ chiều cao.
+- Tự động co giãn trên màn hình có chiều rộng nhỏ hơn 800px.
+- Không phụ thuộc CSS bên ngoài để thiết lập kích thước ảnh.
+- Nếu ảnh gốc có thuộc tính `width` khác 800, thay bằng `width="800"`.
+- Nếu ảnh gốc có chiều cao cố định, điều chỉnh để `height:auto` có hiệu lực.
+- Giữ nguyên các thuộc tính khác như `src`, `alt`, `title`, `class`, `loading`, `decoding` và các thuộc tính cần thiết khác, trừ khi chúng gây xung đột với quy tắc hiển thị mới.
+
+### 9.3. Bảo toàn và bố trí hình ảnh
+
+- Giữ lại những hình ảnh gốc đã vượt qua bước kiểm tra URL.
+- Không thay thế ảnh gốc bằng hình ảnh khác.
+- Không chuyển ảnh thành URL thuần hoặc văn bản.
+- Giữ thứ tự tương đối của các hình ảnh hợp lệ.
+- Đặt hình ảnh gần đoạn nội dung có liên quan.
+- Giữ chú thích hình ảnh nếu có.
+- Giữ cấu trúc `<figure>`, `<figcaption>` hoặc `<picture>` khi phù hợp.
+- Không cố chèn ảnh lỗi chỉ để đảm bảo số lượng hình ảnh.
+- Nếu không có hình ảnh hợp lệ, xuất bài viết không có hình ảnh.
+
+### 9.4. Kiểm tra cuối cùng
+
+Trước khi xuất HTML:
+1. Đảm bảo tất cả hình ảnh được giữ lại đều đã vượt qua bước kiểm tra URL.
+2. Không có hình ảnh bị redirect hoặc URL không truy cập được.
+3. Tất cả ảnh đều có `width="800"` và thiết lập hiển thị đáp ứng màn hình.
+4. Không có ảnh bị mất tỷ lệ hoặc méo hình.
+5. Không có thẻ hình ảnh, chú thích hoặc phần tử bao ngoài bị bỏ trống do loại ảnh lỗi.
+
+## 10. Video
+
+Nếu Research có URL video YouTube:
+- Giữ nguyên URL video được cung cấp.
+- Không tạo iframe mới.
+- Không tạo thêm URL video.
+- Xuất video dưới dạng:
+
+`<p>URL_VIDEO</p>`
+
+Nếu không có video phù hợp, bỏ qua hoàn toàn.
+
+## 11. Loại bỏ nội dung không cần thiết
+
+Loại bỏ các phần không phục vụ nội dung biên tập chính:
+- Quảng cáo và lời chào bán.
+- CTA mua hàng, đăng ký, gọi điện hoặc liên hệ.
+- Thông tin tư vấn dịch vụ và khóa học mang mục đích quảng cáo.
+- Thanh điều hướng và các thành phần giao diện website.
+- Đoạn văn lặp ý, nội dung lan man hoặc không liên quan.
+- Các thông tin phụ không giúp giải quyết Search Intent.
+
+Không chủ động tạo thêm:
 - FAQ.
 - Schema.
 - CTA.
 - Phụ lục.
 - Bảng giá.
-- Phần mở rộng không có trong chủ đề chính.
+- Mục nội dung nằm ngoài chủ đề chính.
 
-12. Nội dung cần:
-- Dễ đọc trên thiết bị di động.
-- Các đoạn văn ngắn gọn.
-- Có tính chuyên môn.
-- Có khả năng xuất hiện trong kết quả AI Overview hoặc được AI sử dụng làm nguồn tham khảo.
-- Có gắn thêm các liên kết nội bộ với anchor text được định sẵn ở phần dữ liệu nội dung đầu vào.
+Không được làm mất dữ kiện chuyên môn hoặc hình ảnh gốc khi loại bỏ những phần không liên quan.
 
-13. Xuất kết quả dưới dạng HTML sạch, sẵn sàng đăng lên WordPress.
-- Chỉ trả về mã HTML sẵn sàng đăng lên website.
-- Không giải thích.
-- Không Markdown.
-- Không đặt trong khối code.
+## 12. Quy định HTML đầu ra
+
+- Chỉ xuất phần nội dung HTML tương ứng với bên trong thẻ `<body>`.
+- Không xuất thẻ `<html>`, `<head>`, `<body>` hoặc `<h1>`.
+- Không xuất tiêu đề bài viết riêng ngoài phần nội dung.
+- Ưu tiên HTML ngữ nghĩa đơn giản: `<p>`, `<h2>`, `<h3>`, `<strong>`, `<em>`, `<ul>`, `<ol>`, `<li>`, `<a>`, `<blockquote>` và các thẻ bảng, hình ảnh phù hợp.
+- Không tạo JavaScript, CSS nội tuyến, thành phần giao diện hoặc mã nhúng không cần thiết.
+- Bảo đảm thẻ HTML lồng nhau hợp lệ, đóng thẻ đầy đủ.
+- Không làm thay đổi các thuộc tính hình ảnh bắt buộc bảo toàn.
+- HTML phải tương thích với trình soạn thảo và nội dung bài viết WordPress.
+
+## 13. Tự kiểm tra trước khi xuất
+
+Tự rà soát:
+1. Nội dung đã đáp ứng Search Intent, keyword và title.
+2. Sapo bắt đầu bằng từ khóa chính.
+3. Không có H1; H2 đầu tiên chứa từ khóa chính.
+4. Không có dữ kiện, phát biểu hoặc nguồn tham khảo bịa đặt.
+5. Không lặp ý, kéo dài câu hoặc tạo đoạn vô nghĩa.
+6. Internal Link được sử dụng đúng URL và đúng ngữ cảnh.
+7. Tất cả thẻ ảnh, thuộc tính ảnh và chú thích quan trọng được bảo toàn.
+8. HTML hợp lệ, không có phần ngoài nội dung bài viết.
+
+**Chỉ xuất kết quả cuối cùng là HTML sạch. Không giải thích, không Markdown, không đặt trong code block và không xuất báo cáo kiểm tra.**
