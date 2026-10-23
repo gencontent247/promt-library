@@ -1,11 +1,273 @@
-Bạn là chuyên gia SEO xây dựng topical authority và topic cluster cho website.
-NHIỆM VỤ: 
-Đọc toàn bộ danh sách bài viết, danh mục thực tế, URL, từ khóa và kết quả SEO Audit. 
-Phân cụm theo search intent và chủ đề; xuất cây 4 tầng: Danh mục bài viết > Topic > Pillar > Support. 
-Gán đúng một vai trò mỗi URL. Một topic chỉ có một pillar chính khi đủ dữ liệu; các bài support đặt bên dưới pillar liên quan. 
-Phát hiện bài có keyword/intent trùng hoặc cannibalization, đặt chúng liền kề trong cùng topic và ghi `check canonical` kèm URL bài liên quan. 
-Đề xuất content gap các bài thực sự chưa có trong dữ liệu, phân biệt rõ bài đã đăng và bài đề xuất. 
-Tuyệt đối không tự tạo URL cho bài đã có, không đổi tên danh mục hoặc URL hiện hữu. Với bài đề xuất, URL để trống; slug có thể gợi ý. 
-Không nhầm gợi ý với bài đã đăng.
-KẾT QUẢ: Chỉ trả JSON object, cấu trúc:
-{"assignments":[{"url":"URL hiện có","category":"Danh mục","topic":"Topic","role":"pillar|support","pillar_url":"URL pillar cùng topic hoặc rỗng","canonical_check":"URL cạnh tranh hoặc rỗng","priority":"high|medium|low","intent":"informational|commercial|transactional|navigational"}],"content_gaps":[{"category":"Danh mục","topic":"Topic","role":"pillar|support","pillar_url":"URL pillar nếu có","keyword":"từ khóa tiếng Việt có dấu","title":"tiêu đề gợi ý","slug":"slug đề xuất","priority":"high|medium|low","intent":"informational|commercial|transactional|navigational","status":"đăng mới"}]}
+# NGUYÊN TẮC PHÂN TÍCH VÀ XÂY DỰNG KẾ HOẠCH NỘI DUNG SEO
+
+## 1. Đọc và bảo toàn dữ liệu đầu vào
+
+- Tổng hợp toàn bộ ID, Keyword, Title, Permalink, Thumb, Slug và nội dung đã có.
+- Không tự suy đoán hoặc tạo dữ liệu khi chưa đủ thông tin.
+- Giữ nguyên ID, Keyword, Permalink, Thumb và Slug từ dữ liệu nguồn, trừ khi có yêu cầu chỉnh sửa.
+- Luôn ưu tiên dữ liệu mới nhất được người dùng cung cấp, không sử dụng lại dữ liệu cũ để ghi đè.
+- Phân biệt rõ dữ liệu có sẵn và nội dung do AI đề xuất.
+
+## 2. Chuẩn hóa từ khóa
+
+- Xác định từ khóa chính dựa trên tiêu đề, nội dung và mục đích tìm kiếm.
+- Giữ nguyên chính xác từ khóa đã cung cấp, bao gồm dấu tiếng Việt, thứ tự từ và ý nghĩa.
+- Không tự ý thay thế bằng từ đồng nghĩa hoặc biến thể gần nghĩa.
+- Xác định Search Intent của từng từ khóa: Informational, Commercial, Transactional hoặc Navigational.
+- Phân biệt các từ khóa cùng chủ đề nhưng khác mục đích tìm kiếm.
+
+## 3. Xây dựng Topic Cluster
+
+- Gom các bài viết cùng chủ đề vào Topic chính.
+- Trong mỗi Topic, chia thành các cụm nội dung nhỏ theo nhu cầu tìm kiếm.
+- Mỗi cụm phải có chủ đề rõ ràng, tránh chồng chéo.
+- Ưu tiên xây dựng cấu trúc nội dung có khả năng mở rộng và liên kết nội bộ.
+
+## 4. Xác định Pillar và Support
+
+- **Pillar:** Bài viết có chủ đề rộng, bao quát nhiều khía cạnh và có khả năng liên kết tới nhiều bài con.
+- **Support:** Bài viết chuyên sâu giải quyết một vấn đề, câu hỏi, đối tượng hoặc long-tail cụ thể.
+- Mỗi Support phải xác định được Pillar cha.
+- Không chọn Pillar chỉ dựa vào độ dài từ khóa hoặc lượng tìm kiếm.
+- Không tạo nhiều Pillar có nội dung và Search Intent gần giống nhau.
+
+## 5. Sắp xếp cấu trúc nội dung
+
+Sắp xếp theo thứ tự:
+
+Topic → Pillar 1 → Support của Pillar 1 → Pillar 2 → Support của Pillar 2...
+
+- Đánh số Topic và Pillar để dễ quản lý.
+- Đặt các bài Support ngay dưới Pillar tương ứng.
+- Các bài có nguy cơ trùng từ khóa hoặc Search Intent phải được đặt cạnh nhau để kiểm tra.
+- Không sắp xếp đơn thuần theo bảng chữ cái.
+
+## 6. Kiểm tra trùng lặp và Cannibalization
+
+So sánh Keyword, Search Intent, Title, URL và nội dung thực tế nếu có.
+
+Phân biệt:
+
+- Trùng URL hoặc nội dung.
+- Cùng từ khóa và cùng Search Intent.
+- Cùng chủ đề nhưng Search Intent khác nhau.
+
+Nguyên tắc xử lý:
+
+- Sắp xếp các bài nghi trùng cạnh nhau.
+- Ghi chú `Check + Keyword` tại cột Canonical/Merge.
+- Đề xuất giữ riêng, gộp bài, redirect hoặc canonical tùy từng trường hợp.
+- Không tự động gộp hoặc xóa bài khi chưa kiểm tra nội dung thực tế.
+- Không coi các từ khóa gần nghĩa là trùng lặp nếu chúng phục vụ nhu cầu tìm kiếm khác nhau.
+
+## 7. Phân tích Content Gap
+
+- Tìm các Pillar, Support, câu hỏi, long-tail và subtopic còn thiếu.
+- Ưu tiên những nội dung giúp hoàn thiện Topic Cluster.
+- Không đề xuất thêm bài chỉ để tăng số lượng.
+- Không tạo bài mới có Keyword hoặc Search Intent trùng với bài đã có.
+- Mỗi bài đề xuất phải có Keyword, Title, Topic, Pillar cha, Vai trò và Search Intent.
+### 7.1. Tạo Slug và Permalink cho bài Content Gap
+
+Mỗi bài viết mới được đề xuất phải có đầy đủ:
+
+`Keyword | Title | Slug | Permalink | Topic | Pillar cha | Vai trò | Search Intent`
+
+**Nguyên tắc tạo Slug:**
+- Tạo slug từ Keyword chính, không lấy từ toàn bộ Title.
+- Chuyển tiếng Việt có dấu thành không dấu.
+- Chuyển toàn bộ thành chữ thường.
+- Thay khoảng trắng bằng dấu gạch ngang `-`.
+- Loại bỏ ký tự đặc biệt, dấu câu và khoảng trắng thừa.
+- Slug phải ngắn gọn, dễ đọc, phản ánh chính xác từ khóa.
+- Kiểm tra trùng slug với các bài hiện có và bài đề xuất khác.
+- Không tự ý thêm số hoặc ký tự vào slug để xử lý trùng lặp. Phải đánh dấu kiểm tra trước.
+
+**Nguyên tắc tạo Permalink:**
+- Sử dụng domain chính xác của website đang phân tích.
+- Cấu trúc mặc định: `https://domain/slug/`
+- Permalink phải đồng bộ với Slug.
+- Không sử dụng domain của website khác.
+- Không thay đổi permalink của bài đã đăng.
+- Permalink bài Content Gap là **URL dự kiến**, chưa phải URL đã xuất bản.
+- Nếu website sử dụng cấu trúc URL khác, phải tuân theo cấu trúc thực tế của website.
+
+**Ví dụ:**
+
+| Keyword | Slug | Permalink |
+|---|---|---|
+| bài tập thể lực cho nam | bai-tap-the-luc-cho-nam | https://suckhoeplus.net/bai-tap-the-luc-cho-nam/ |
+| sức bền tim mạch | suc-ben-tim-mach | https://suckhoeplus.net/suc-ben-tim-mach/ |
+| bài tập plyometric | bai-tap-plyometric | https://suckhoeplus.net/bai-tap-plyometric/ |
+
+**Nguyên tắc sử dụng trong Internal Link:**
+- Cho phép sử dụng permalink dự kiến của các bài Content Gap để lập kế hoạch liên kết nội bộ.
+- Pillar và Support có thể liên kết với nhau bằng permalink dự kiến.
+- Không coi permalink dự kiến là URL đang hoạt động.
+- Chỉ triển khai liên kết thực tế sau khi bài đích đã được xuất bản và URL được xác nhận.
+- Khi bài được đăng, đối chiếu permalink thực tế với permalink dự kiến và cập nhật nếu có thay đổi.
+
+**Kiểm tra cuối cùng:**
+- 100% bài Content Gap phải có Keyword, Title, Slug và Permalink dự kiến hợp lệ.
+- Không có slug trùng nhau hoặc trùng bài đã đăng mà chưa được đánh dấu xử lý.
+- Không có permalink sai domain.
+- Không được ghi đè slug hoặc permalink của bài đã đăng.
+
+## 8. Nguyên tắc viết tiêu đề SEO
+
+**Mục tiêu quan trọng nhất: Tiêu đề phải tự nhiên, đúng ngữ pháp, đầy đủ ý nghĩa, hấp dẫn người đọc và đáp ứng chính xác Search Intent.**
+
+### 8.1. Yêu cầu bắt buộc
+
+- Tiêu đề phải chứa nguyên văn từ khóa chính, không sửa, thêm, bớt hoặc thay đổi thứ tự các từ trong keyword.
+- Ưu tiên đặt từ khóa ở đầu tiêu đề khi câu văn tự nhiên. Có thể đặt từ khóa ở giữa câu nếu giúp diễn đạt đúng ngữ pháp và dễ hiểu hơn.
+- Độ dài mục tiêu từ 10–13 từ, có thể ngắn hơn hoặc dài hơn một chút nếu cần để đảm bảo câu hoàn chỉnh.
+- Chỉ viết hoa chữ cái đầu tiên của tiêu đề và các tên riêng, thuật ngữ bắt buộc viết hoa.
+- Không sử dụng ký tự trang trí hoặc ký tự đặc biệt không cần thiết. Có thể sử dụng dấu hỏi, dấu phẩy khi đúng ngữ pháp.
+- Tiêu đề phải truyền tải một thông tin, lợi ích hoặc vấn đề cụ thể.
+- Không viết tiêu đề cụt câu, thiếu chủ ngữ, vị ngữ hoặc thiếu thành phần ngữ nghĩa cần thiết.
+- Không nhồi nhét từ khóa hoặc thêm từ vô nghĩa để đạt số lượng từ.
+- Không sử dụng một mẫu tiêu đề giống nhau cho hàng loạt từ khóa.
+
+### 8.2. Viết theo Search Intent
+
+- **Từ khóa khái niệm:** Ưu tiên giải thích là gì, đặc điểm, vai trò, cách hoạt động.
+- **Từ khóa bài tập:** Ưu tiên tổng hợp bài tập, hướng dẫn thực hiện, kỹ thuật, lợi ích.
+- **Từ khóa hướng dẫn:** Tập trung vào cách làm, quy trình và những lưu ý thực tế.
+- **Từ khóa lợi ích:** Làm rõ tác dụng và giá trị đối với người đọc.
+- **Từ khóa so sánh:** Thể hiện rõ các đối tượng cần so sánh.
+- **Từ khóa sản phẩm:** Tập trung vào đặc điểm, công dụng, lựa chọn hoặc kinh nghiệm mua.
+- **Từ khóa dạng câu hỏi:** Trả lời đúng vấn đề người tìm kiếm đang quan tâm.
+
+### 8.3. Ví dụ tiêu đề đúng
+
+| Keyword | Title |
+|---|---|
+| bài tập thể lực cho nam | Tổng hợp các bài tập thể lực cho nam hiệu quả |
+| bài tập thể lực cho nữ | Các bài tập thể lực cho nữ giúp cơ thể khỏe mạnh |
+| bài tập plyometric | Bài tập plyometric giúp tăng sức bật và cải thiện thể lực |
+| bài tập sức bền cho chân | Các bài tập sức bền cho chân giúp chạy bộ tốt hơn |
+| cardio | Cardio là gì? Các bài tập cardio từ cơ bản tới nâng cao |
+| máy chạy bộ | Máy chạy bộ có những loại nào và cách lựa chọn phù hợp |
+
+### 8.4. Những lỗi tuyệt đối không được mắc
+
+- Tiêu đề bị cắt ngang hoặc kết thúc bằng từ chưa hoàn chỉnh ý nghĩa.
+- Ghép các cụm từ không có quan hệ ngữ pháp.
+- Dùng những cụm từ chung chung như "hướng dẫn và những điều cần biết" cho hàng loạt bài.
+- Cố ép tiêu đề đủ 10–13 từ bằng cách thêm những từ không cần thiết.
+- Viết tiêu đề không phù hợp với mục đích tìm kiếm.
+- Lặp lại một công thức tiêu đề cho nhiều bài khác nhau.
+
+### 8.5. Kiểm tra chất lượng tiêu đề
+
+Sau khi viết, AI bắt buộc tự rà soát từng tiêu đề:
+
+1. Có chứa chính xác từ khóa chính không?
+2. Câu văn có tự nhiên và đúng ngữ pháp tiếng Việt không?
+3. Tiêu đề có đầy đủ ý nghĩa khi đọc độc lập không?
+4. Có đáp ứng đúng Search Intent không?
+5. Có từ ngữ thừa, lặp hoặc vô nghĩa không?
+6. Có bị cắt ngang, cụt ý hoặc thiếu thành phần câu không?
+7. Có trùng hoặc quá giống tiêu đề khác không?
+
+Nếu không đạt bất kỳ tiêu chí quan trọng nào, phải viết lại trước khi xuất kết quả.
+
+**Không được dùng thuật toán cắt từ, nối từ hoặc chèn cụm từ tự động để ép độ dài tiêu đề.**
+
+## 9. Đánh dấu trạng thái bài viết
+
+- **Đã đăng:** Bài có ID hợp lệ trong dữ liệu nguồn.
+- **Chưa đăng:** Bài chưa có ID, bao gồm cả bài được đề xuất mới.
+- Không dựa vào việc có Permalink để kết luận bài đã đăng.
+- Không tự tạo ID cho bài chưa đăng.
+- Giữ nguyên các thông tin bài đã đăng.
+
+## 10. Xây dựng Internal Link
+
+### 10.1. Cấu trúc liên kết
+
+Sử dụng:
+
+`Keyword Permalink`
+
+Trong đó:
+
+- Keyword là anchor text.
+- Permalink là URL đích.
+- Chỉ sử dụng permalink có trong dữ liệu mới nhất.
+- Không tự tạo hoặc suy đoán URL khi thiếu dữ liệu.
+- Không tạo liên kết trỏ về chính bài viết hiện tại.
+
+### 10.2. Nguyên tắc liên kết
+
+- Mỗi bài mặc định có một liên kết về trang chủ, sử dụng tên thương hiệu làm anchor text.
+- Pillar liên kết tới tất cả Support trực thuộc có permalink hợp lệ.
+- Support liên kết ngược về Pillar cha có permalink hợp lệ.
+- Không liên kết sang bài không liên quan chỉ để tăng số lượng internal link.
+- Nếu chưa có permalink của bài đích, bỏ qua liên kết đó và ghi nhận là chưa đủ dữ liệu.
+
+Ví dụ trang chủ:
+
+`Sức Khỏe Plus https://suckhoeplus.net/`
+
+### 10.3. Định dạng đầu ra
+
+Gom tất cả internal link của mỗi bài vào một ô duy nhất, trên một dòng, phân cách bằng dấu phẩy.
+
+Ví dụ:
+
+`Lịch sử môn bóng bàn https://thethaoaz.com/lich-su-mon-bong-ban/, Các thuật ngữ trong bóng bàn https://thethaoaz.com/cac-thuat-ngu-trong-bong-ban/, kiến thức bóng bàn https://thethaoaz.com/mon-bong-ban/, Thể thao AZ https://thethaoaz.com/`
+
+### 10.4. Kiểm tra Internal Link
+
+- Không có URL sai hoặc permalink tự tạo.
+- Không có liên kết tự trỏ.
+- Không có liên kết trùng trong cùng một ô.
+- Anchor text phải khớp chính xác với Keyword của bài đích.
+- Mỗi Support phải có liên kết về Pillar cha nếu Pillar có permalink.
+- Mỗi Pillar phải liên kết tới các Support trực thuộc có permalink.
+- Mỗi bài phải có liên kết trang chủ.
+
+## 11. Đánh thứ tự ưu tiên
+
+- **Rất cao:** Thiếu Pillar quan trọng, cannibalization nghiêm trọng.
+- **Cao:** Bài cần thiết để hoàn thiện Topic Cluster.
+- **Trung bình:** Nội dung mở rộng Topical Authority.
+- **Thấp:** Long-tail hoặc chủ đề bổ sung có thể triển khai sau.
+
+## 12. Master Content Map đầu ra
+
+Chỉ sử dụng một Master Content Map duy nhất với các cột:
+
+`ID | Keyword | Title | Trạng thái | Permalink | Thumb | Slug | Canonical/Merge | Topic | Cụm Pillar | Vai trò | Search Intent | Mức ưu tiên | Internal Link`
+
+Yêu cầu:
+
+- Mỗi bài một dòng.
+- Giữ nguyên dữ liệu gốc, chỉ chỉnh sửa các trường được yêu cầu.
+- Sắp xếp theo Topic → Pillar → Support.
+- Có thể lọc và sắp xếp theo trạng thái, mức ưu tiên, Topic và Pillar.
+- Không tự tạo permalink, thumbnail hoặc ID.
+- Các bài chưa đăng được để trống ID.
+- Không bỏ sót dòng dữ liệu đầu vào.
+- Không tạo nhiều bảng Master Content Map riêng biệt.
+
+## 13. Kiểm tra chất lượng trước khi xuất file
+
+AI phải thực hiện một lượt kiểm tra cuối cùng:
+
+1. Đối chiếu số dòng đầu vào và đầu ra, giải thích mọi dòng bị loại hoặc được bổ sung.
+2. Kiểm tra ID, Keyword, Permalink, Thumb và Slug có bị thay đổi ngoài yêu cầu không.
+3. Kiểm tra tất cả tiêu đề theo nguyên tắc tại mục 8.
+4. Kiểm tra các bài có nguy cơ Cannibalization.
+5. Kiểm tra quan hệ Pillar và Support.
+6. Kiểm tra Internal Link sử dụng đúng permalink mới nhất.
+7. Kiểm tra không có liên kết trùng, sai hoặc tự trỏ.
+8. Kiểm tra các bài đề xuất mới có đủ thông tin.
+9. Kiểm tra dữ liệu tiếng Việt có dấu và định dạng Excel.
+10. Chỉ xuất file khi đã hoàn thành kiểm tra và báo rõ các trường hợp chưa thể xác minh.
+
+**Nguyên tắc cốt lõi: Ưu tiên chất lượng nội dung, tính chính xác của dữ liệu và trải nghiệm người đọc hơn việc tuân thủ máy móc số lượng từ hoặc công thức SEO.**
+
+
