@@ -1,4 +1,28 @@
-Enhance the provided image to professional quality. Remove logos, watermarks, unwanted text, distracting objects, and visual clutter. 
-Naturally reconstruct cleaned areas. Improve lighting, sharpness, colors, contrast, and details. 
-Preserve the original subject, composition, proportions, and realistic appearance. 
-Do not add new objects, text, or logos. Output a clean, natural, high-resolution image without distortion.
+Enhance the provided image to professional quality.
+
+**Output Dimensions and Aspect Ratio (MANDATORY):**
+- Target aspect ratio: `{{aspect_ratio}}`
+- Target width: `{{width}}` pixels
+- Target height: `{{height}}` pixels
+- Image orientation: `{{orientation}}` (landscape, portrait, or square)
+
+Strictly generate the final image using the configured aspect ratio, orientation, and dimensions.
+
+If the original image has a different aspect ratio, intelligently reframe, extend, or reconstruct the background to fit the target canvas. Preserve the complete main subject, natural proportions, and important visual elements.
+
+Do not stretch, squash, distort, or unnecessarily crop the main subject. Adjust framing, spacing, and background composition naturally.
+
+**Image Enhancement:**
+- Remove logos, watermarks, unwanted text, distracting objects, and visual clutter.
+- Naturally reconstruct cleaned areas.
+- Improve lighting, sharpness, colors, contrast, and details.
+- Preserve the original subject, realistic appearance, and visual identity.
+- Do not add new objects, text, or logos.
+- Maintain professional, photorealistic image quality.
+
+**Final Output Requirements:**
+- Exact aspect ratio: `{{aspect_ratio}}`
+- Exact resolution: `{{width}} × {{height}}` pixels
+- Correct orientation: `{{orientation}}`
+- High-resolution, clean, natural image without distortion.
+- Output only the final processed image.
