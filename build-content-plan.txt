@@ -104,8 +104,7 @@ Mỗi bài viết mới được đề xuất phải có đầy đủ:
 **Nguyên tắc sử dụng trong Internal Link:**
 - Cho phép sử dụng permalink dự kiến của các bài Content Gap để lập kế hoạch liên kết nội bộ.
 - Pillar và Support có thể liên kết với nhau bằng permalink dự kiến.
-- Internal link trong bài Pillar sẽ trỏ tới danh mục blog, domain và khoảng 3-5 bài support phù hợp trong pillar đó.
-- Internal link trong bài support thì trỏ với danh mục blog, domain, bài pillar và 1 số bài support bên cạnh nếu phù hợp ngữ cảnh.
+
 
 **Kiểm tra cuối cùng:**
 - 100% bài Content Gap phải có Keyword, Title, Slug và Permalink dự kiến hợp lệ.
@@ -206,6 +205,9 @@ Trong đó:
 - Support liên kết ngược về Pillar cha có permalink hợp lệ.
 - Không liên kết sang bài không liên quan chỉ để tăng số lượng internal link.
 - Nếu chưa có permalink của bài đích, bỏ qua liên kết đó và ghi nhận là chưa đủ dữ liệu.
+- Internal link trong bài Pillar sẽ trỏ tới danh mục blog, domain và khoảng 3-5 bài support phù hợp trong pillar đó.
+- Internal link trong bài support thì trỏ với danh mục blog, domain, bài pillar và 1 số bài support bên cạnh nếu phù hợp ngữ cảnh.
+- Tổng internal link trong 1 bài viết chỉ nên có từ khoảng 5-7 link, trong đó luôn có URL domain, URL danh mục bài viết. còn lại là URL cho pillar và các bài support.
 
 Ví dụ trang chủ:
 
