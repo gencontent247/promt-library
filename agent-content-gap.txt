@@ -55,9 +55,8 @@ Phân biệt:
 Nguyên tắc xử lý:
 
 - Sắp xếp các bài nghi trùng cạnh nhau.
-- Ghi chú `Check + Keyword` tại cột Canonical/Merge.
-- Đề xuất giữ riêng, gộp bài, redirect hoặc canonical tùy từng trường hợp.
-- Không tự động gộp hoặc xóa bài khi chưa kiểm tra nội dung thực tế.
+- Ghi chú `Check + URL nghi trùng` tại cột Canonical/Merge.
+- Không tự động gộp hoặc xóa bài
 - Không coi các từ khóa gần nghĩa là trùng lặp nếu chúng phục vụ nhu cầu tìm kiếm khác nhau.
 
 ## 7. Phân tích Content Gap
@@ -67,6 +66,8 @@ Nguyên tắc xử lý:
 - Không đề xuất thêm bài chỉ để tăng số lượng.
 - Không tạo bài mới có Keyword hoặc Search Intent trùng với bài đã có.
 - Mỗi bài đề xuất phải có Keyword, Title, Topic, Pillar cha, Vai trò và Search Intent.
+- Title bắt buộc chứa từ khóa chính xác, độ dài từ 9-13 từ, viết hoa chữ cái đầu tiên, 
+Tiêu đề là 1 câu đầy đủ ngữ nghĩa, bám sát vào ý định tìm kiếm của từ khóa để con người đọc hiểu
 ### 7.1. Tạo Slug và Permalink cho bài Content Gap
 
 Mỗi bài viết mới được đề xuất phải có đầy đủ:
@@ -103,9 +104,7 @@ Mỗi bài viết mới được đề xuất phải có đầy đủ:
 **Nguyên tắc sử dụng trong Internal Link:**
 - Cho phép sử dụng permalink dự kiến của các bài Content Gap để lập kế hoạch liên kết nội bộ.
 - Pillar và Support có thể liên kết với nhau bằng permalink dự kiến.
-- Không coi permalink dự kiến là URL đang hoạt động.
-- Chỉ triển khai liên kết thực tế sau khi bài đích đã được xuất bản và URL được xác nhận.
-- Khi bài được đăng, đối chiếu permalink thực tế với permalink dự kiến và cập nhật nếu có thay đổi.
+
 
 **Kiểm tra cuối cùng:**
 - 100% bài Content Gap phải có Keyword, Title, Slug và Permalink dự kiến hợp lệ.
@@ -115,7 +114,7 @@ Mỗi bài viết mới được đề xuất phải có đầy đủ:
 
 ## 8. Nguyên tắc viết tiêu đề SEO
 
-**Mục tiêu quan trọng nhất: Tiêu đề phải tự nhiên, đúng ngữ pháp, đầy đủ ý nghĩa, hấp dẫn người đọc và đáp ứng chính xác Search Intent.**
+- Tiêu đề phải tự nhiên, đúng ngữ pháp, đầy đủ ý nghĩa, hấp dẫn người đọc và đáp ứng chính xác Search Intent.
 
 ### 8.1. Yêu cầu bắt buộc
 
@@ -206,6 +205,9 @@ Trong đó:
 - Support liên kết ngược về Pillar cha có permalink hợp lệ.
 - Không liên kết sang bài không liên quan chỉ để tăng số lượng internal link.
 - Nếu chưa có permalink của bài đích, bỏ qua liên kết đó và ghi nhận là chưa đủ dữ liệu.
+- Internal link trong bài Pillar sẽ trỏ tới danh mục blog, domain và khoảng 3-5 bài support phù hợp trong pillar đó.
+- Internal link trong bài support thì trỏ với danh mục blog, domain, bài pillar và 1 số bài support bên cạnh nếu phù hợp ngữ cảnh.
+- Tổng internal link trong 1 bài viết chỉ nên có từ khoảng 5-7 link, trong đó luôn có URL domain, URL danh mục bài viết. còn lại là URL cho pillar và các bài support.
 
 Ví dụ trang chủ:
 
@@ -240,7 +242,7 @@ Ví dụ:
 
 Chỉ sử dụng một Master Content Map duy nhất với các cột:
 
-`ID | Keyword | Title | Trạng thái | Permalink | Thumb | Slug | Canonical/Merge | Topic | Cụm Pillar | Vai trò | Search Intent | Mức ưu tiên | Internal Link`
+`ID | Keyword | Title | Permalink | Thumb | Slug | Internal Link | Canonical/Merge | Topic | Cụm Pillar | Vai trò`
 
 Yêu cầu:
 
@@ -269,5 +271,3 @@ AI phải thực hiện một lượt kiểm tra cuối cùng:
 10. Chỉ xuất file khi đã hoàn thành kiểm tra và báo rõ các trường hợp chưa thể xác minh.
 
 **Nguyên tắc cốt lõi: Ưu tiên chất lượng nội dung, tính chính xác của dữ liệu và trải nghiệm người đọc hơn việc tuân thủ máy móc số lượng từ hoặc công thức SEO.**
-
-
